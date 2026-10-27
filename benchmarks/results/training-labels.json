@@ -1,0 +1,653 @@
+{
+  "formula": "RR - 0.05*min(median_latency_ms/1000,2) - 0.02*context_bytes/token_budget",
+  "rows": [
+    {
+      "query_id": "train-auth-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9812560666666666,
+          "rr": 1.0,
+          "median_ms": 26.212,
+          "context_byte_upper_bound": 1046
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9803293999999999,
+          "rr": 1.0,
+          "median_ms": 39.412,
+          "context_byte_upper_bound": 1062
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9791989,
+          "rr": 1.0,
+          "median_ms": 59.022,
+          "context_byte_upper_bound": 1071
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-auth-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9788431000000001,
+          "rr": 1.0,
+          "median_ms": 29.388,
+          "context_byte_upper_bound": 4032
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.979452325,
+          "rr": 1.0,
+          "median_ms": 43.766,
+          "context_byte_upper_bound": 3760
+        },
+        {
+          "action": "semantic",
+          "utility": 0.978343640625,
+          "rr": 1.0,
+          "median_ms": 56.76,
+          "context_byte_upper_bound": 3854
+        }
+      ],
+      "selected": "hybrid"
+    },
+    {
+      "query_id": "train-backoff-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9907728333333333,
+          "rr": 1.0,
+          "median_ms": 26.21,
+          "context_byte_upper_bound": 475
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9899257,
+          "rr": 1.0,
+          "median_ms": 40.486,
+          "context_byte_upper_bound": 483
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9809522833333334,
+          "rr": 1.0,
+          "median_ms": 56.621,
+          "context_byte_upper_bound": 973
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-backoff-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": -0.0214349234375,
+          "rr": 0,
+          "median_ms": 29.968,
+          "context_byte_upper_bound": 4083
+        },
+        {
+          "action": "hybrid",
+          "utility": -0.0219966359375,
+          "rr": 0,
+          "median_ms": 40.421,
+          "context_byte_upper_bound": 4091
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9776136734375,
+          "rr": 1.0,
+          "median_ms": 49.582,
+          "context_byte_upper_bound": 4077
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-billing-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9893907,
+          "rr": 1.0,
+          "median_ms": 30.186,
+          "context_byte_upper_bound": 546
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9888696666666666,
+          "rr": 1.0,
+          "median_ms": 37.94,
+          "context_byte_upper_bound": 554
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9791255833333333,
+          "rr": 1.0,
+          "median_ms": 42.155,
+          "context_byte_upper_bound": 1126
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-billing-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": -0.021413404687500002,
+          "rr": 0,
+          "median_ms": 32.272,
+          "context_byte_upper_bound": 4055
+        },
+        {
+          "action": "hybrid",
+          "utility": -0.0206446859375,
+          "rr": 0,
+          "median_ms": 44.632,
+          "context_byte_upper_bound": 3771
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9792043953124999,
+          "rr": 1.0,
+          "median_ms": 48.041,
+          "context_byte_upper_bound": 3767
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-pagination-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9909345666666666,
+          "rr": 1.0,
+          "median_ms": 27.642,
+          "context_byte_upper_bound": 461
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9901525833333333,
+          "rr": 1.0,
+          "median_ms": 40.615,
+          "context_byte_upper_bound": 469
+        },
+        {
+          "action": "semantic",
+          "utility": 0.98155315,
+          "rr": 1.0,
+          "median_ms": 41.937,
+          "context_byte_upper_bound": 981
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-pagination-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9786450250000001,
+          "rr": 1.0,
+          "median_ms": 28.662,
+          "context_byte_upper_bound": 4080
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9781930609375,
+          "rr": 1.0,
+          "median_ms": 40.338,
+          "context_byte_upper_bound": 4053
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9779938171875,
+          "rr": 1.0,
+          "median_ms": 46.276,
+          "context_byte_upper_bound": 4033
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-queue-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.97993875,
+          "rr": 1.0,
+          "median_ms": 27.225,
+          "context_byte_upper_bound": 1122
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9791759333333333,
+          "rr": 1.0,
+          "median_ms": 37.148,
+          "context_byte_upper_bound": 1138
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9816412833333333,
+          "rr": 1.0,
+          "median_ms": 42.841,
+          "context_byte_upper_bound": 973
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-queue-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9786198484374999,
+          "rr": 1.0,
+          "median_ms": 27.896,
+          "context_byte_upper_bound": 4093
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9794797953125,
+          "rr": 1.0,
+          "median_ms": 39.408,
+          "context_byte_upper_bound": 3799
+        },
+        {
+          "action": "semantic",
+          "utility": 0.14462982604166666,
+          "rr": 0.16666666666666666,
+          "median_ms": 48.354,
+          "context_byte_upper_bound": 4018
+        }
+      ],
+      "selected": "hybrid"
+    },
+    {
+      "query_id": "train-csv-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9788478166666666,
+          "rr": 1.0,
+          "median_ms": 29.377,
+          "context_byte_upper_bound": 1181
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.97822515,
+          "rr": 1.0,
+          "median_ms": 36.497,
+          "context_byte_upper_bound": 1197
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9775838,
+          "rr": 1.0,
+          "median_ms": 49.324,
+          "context_byte_upper_bound": 1197
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-csv-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.3178412020833333,
+          "rr": 0.3333333333333333,
+          "median_ms": 28.202,
+          "context_byte_upper_bound": 2884
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9837329359375,
+          "rr": 1.0,
+          "median_ms": 40.478,
+          "context_byte_upper_bound": 2917
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9785086140625,
+          "rr": 1.0,
+          "median_ms": 49.066,
+          "context_byte_upper_bound": 3899
+        }
+      ],
+      "selected": "hybrid"
+    },
+    {
+      "query_id": "train-distance-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9903105666666667,
+          "rr": 1.0,
+          "median_ms": 28.122,
+          "context_byte_upper_bound": 497
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9898547333333334,
+          "rr": 1.0,
+          "median_ms": 34.572,
+          "context_byte_upper_bound": 505
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9814985666666667,
+          "rr": 1.0,
+          "median_ms": 44.362,
+          "context_byte_upper_bound": 977
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-distance-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9881703109375001,
+          "rr": 1.0,
+          "median_ms": 28.293,
+          "context_byte_upper_bound": 2133
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9875316234375,
+          "rr": 1.0,
+          "median_ms": 38.723,
+          "context_byte_upper_bound": 2157
+        },
+        {
+          "action": "semantic",
+          "utility": 0.979251846875,
+          "rr": 1.0,
+          "median_ms": 46.799,
+          "context_byte_upper_bound": 3770
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-memo-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9896913166666667,
+          "rr": 1.0,
+          "median_ms": 32.507,
+          "context_byte_upper_bound": 521
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9893661333333333,
+          "rr": 1.0,
+          "median_ms": 36.344,
+          "context_byte_upper_bound": 529
+        },
+        {
+          "action": "semantic",
+          "utility": 0.97816965,
+          "rr": 1.0,
+          "median_ms": 42.607,
+          "context_byte_upper_bound": 1182
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-memo-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": -0.022206323437499998,
+          "rr": 0,
+          "median_ms": 48.521,
+          "context_byte_upper_bound": 4051
+        },
+        {
+          "action": "hybrid",
+          "utility": -0.0217809109375,
+          "rr": 0,
+          "median_ms": 37.669,
+          "context_byte_upper_bound": 4075
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9789914875000001,
+          "rr": 1.0,
+          "median_ms": 50.639,
+          "context_byte_upper_bound": 3784
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-backup-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9810509333333334,
+          "rr": 1.0,
+          "median_ms": 34.648,
+          "context_byte_upper_bound": 1033
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9807513666666667,
+          "rr": 1.0,
+          "median_ms": 35.306,
+          "context_byte_upper_bound": 1049
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9804251166666667,
+          "rr": 1.0,
+          "median_ms": 41.831,
+          "context_byte_upper_bound": 1049
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-backup-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": -0.0218205796875,
+          "rr": 0,
+          "median_ms": 41.978,
+          "context_byte_upper_bound": 4039
+        },
+        {
+          "action": "hybrid",
+          "utility": -0.0217417,
+          "rr": 0,
+          "median_ms": 37.959,
+          "context_byte_upper_bound": 4064
+        },
+        {
+          "action": "semantic",
+          "utility": 0.178091615625,
+          "rr": 0.2,
+          "median_ms": 63.363,
+          "context_byte_upper_bound": 3838
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-accessibility-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9890048833333334,
+          "rr": 1.0,
+          "median_ms": 52.569,
+          "context_byte_upper_bound": 502
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9896814500000001,
+          "rr": 1.0,
+          "median_ms": 36.371,
+          "context_byte_upper_bound": 510
+        },
+        {
+          "action": "semantic",
+          "utility": 0.98065515,
+          "rr": 1.0,
+          "median_ms": 46.897,
+          "context_byte_upper_bound": 1020
+        }
+      ],
+      "selected": "hybrid"
+    },
+    {
+      "query_id": "train-accessibility-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": -0.0213184703125,
+          "rr": 0,
+          "median_ms": 33.303,
+          "context_byte_upper_bound": 4025
+        },
+        {
+          "action": "hybrid",
+          "utility": -0.02169955,
+          "rr": 0,
+          "median_ms": 37.116,
+          "context_byte_upper_bound": 4064
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9780266484375,
+          "rr": 1.0,
+          "median_ms": 46.01,
+          "context_byte_upper_bound": 4029
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-incident-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.9901673333333334,
+          "rr": 1.0,
+          "median_ms": 29.32,
+          "context_byte_upper_bound": 502
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9896599,
+          "rr": 1.0,
+          "median_ms": 36.802,
+          "context_byte_upper_bound": 510
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9799972666666666,
+          "rr": 1.0,
+          "median_ms": 44.388,
+          "context_byte_upper_bound": 1067
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-incident-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.17884100000000003,
+          "rr": 0.2,
+          "median_ms": 29.43,
+          "context_byte_upper_bound": 4032
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.4785294953125,
+          "rr": 0.5,
+          "median_ms": 36.539,
+          "context_byte_upper_bound": 4023
+        },
+        {
+          "action": "semantic",
+          "utility": 0.47897193437499996,
+          "rr": 0.5,
+          "median_ms": 48.491,
+          "context_byte_upper_bound": 3810
+        }
+      ],
+      "selected": "semantic"
+    },
+    {
+      "query_id": "train-privacy-exact",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.99007875,
+          "rr": 1.0,
+          "median_ms": 32.425,
+          "context_byte_upper_bound": 498
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.9897242166666667,
+          "rr": 1.0,
+          "median_ms": 36.849,
+          "context_byte_upper_bound": 506
+        },
+        {
+          "action": "semantic",
+          "utility": 0.9796567666666667,
+          "rr": 1.0,
+          "median_ms": 48.198,
+          "context_byte_upper_bound": 1076
+        }
+      ],
+      "selected": "lexical"
+    },
+    {
+      "query_id": "train-privacy-intent",
+      "options": [
+        {
+          "action": "lexical",
+          "utility": 0.1786255140625,
+          "rr": 0.2,
+          "median_ms": 31.103,
+          "context_byte_upper_bound": 4059
+        },
+        {
+          "action": "hybrid",
+          "utility": 0.478272228125,
+          "rr": 0.5,
+          "median_ms": 41.782,
+          "context_byte_upper_bound": 4022
+        },
+        {
+          "action": "semantic",
+          "utility": 0.97772376875,
+          "rr": 1.0,
+          "median_ms": 48.259,
+          "context_byte_upper_bound": 4068
+        }
+      ],
+      "selected": "semantic"
+    }
+  ]
+}

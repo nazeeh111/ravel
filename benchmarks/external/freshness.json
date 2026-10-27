@@ -1,0 +1,144 @@
+[
+  {
+    "tool": "qmd",
+    "update": {
+      "returncode": 0,
+      "latency_ms": 465.79908300191164,
+      "peak_rss_bytes": 74399744,
+      "cpu_seconds": 0.32
+    },
+    "new_name_found": true,
+    "renamed_path_found": true,
+    "deleted_path_absent": true,
+    "old_renamed_path_absent": true,
+    "queries": [
+      {
+        "query": "refreshed_retry_request",
+        "files": [
+          "retry.py"
+        ],
+        "returncode": 0,
+        "latency_ms": 538.5177920106798,
+        "peak_rss_bytes": 70500352,
+        "cpu_seconds": 0.26
+      },
+      {
+        "query": "renew_lease",
+        "files": [
+          "lease.md",
+          "lease_renamed.py"
+        ],
+        "returncode": 0,
+        "latency_ms": 448.2062499737367,
+        "peak_rss_bytes": 70975488,
+        "cpu_seconds": 0.27
+      }
+    ]
+  },
+  {
+    "tool": "codanna",
+    "update": {
+      "returncode": 0,
+      "latency_ms": 3603.3307909965515,
+      "peak_rss_bytes": 552189952,
+      "cpu_seconds": 0.91
+    },
+    "new_name_found": true,
+    "renamed_path_found": true,
+    "deleted_path_absent": true,
+    "old_renamed_path_absent": true,
+    "queries": [
+      {
+        "query": "refreshed_retry_request",
+        "files": [
+          "retry.py",
+          "transaction.py",
+          "session.py",
+          "throttle.py",
+          "cache.py",
+          "upload.py",
+          "routing.py",
+          "lease_renamed.py",
+          "snapshot.py",
+          "checksum.py"
+        ],
+        "returncode": 0,
+        "latency_ms": 1386.746917036362,
+        "peak_rss_bytes": 533250048,
+        "cpu_seconds": 0.6799999999999999
+      },
+      {
+        "query": "renew_lease",
+        "files": [
+          "lease_renamed.py",
+          "transaction.py",
+          "snapshot.py",
+          "cache.py",
+          "session.py",
+          "queue.py",
+          "retry.py",
+          "throttle.py",
+          "pagination.py",
+          "checksum.py"
+        ],
+        "returncode": 0,
+        "latency_ms": 805.5892500560731,
+        "peak_rss_bytes": 523763712,
+        "cpu_seconds": 0.62
+      }
+    ]
+  },
+  {
+    "tool": "grepai",
+    "update": {
+      "returncode": 0,
+      "latency_ms": 790.3147080214694,
+      "peak_rss_bytes": 28786688,
+      "cpu_seconds": 0.06
+    },
+    "new_name_found": true,
+    "renamed_path_found": true,
+    "deleted_path_absent": true,
+    "old_renamed_path_absent": true,
+    "queries": [
+      {
+        "query": "refreshed_retry_request",
+        "files": [
+          "retry.py",
+          "transaction.py",
+          "throttle.py",
+          "upload.py",
+          "session.py",
+          "cache.py",
+          "lease_renamed.py",
+          "routing.py",
+          "transaction.md",
+          "snapshot.py"
+        ],
+        "returncode": 0,
+        "latency_ms": 157.83024998381734,
+        "peak_rss_bytes": 27918336,
+        "cpu_seconds": 0.03
+      },
+      {
+        "query": "renew_lease",
+        "files": [
+          "lease_renamed.py",
+          "lease.md",
+          "cache.py",
+          "session.py",
+          "transaction.py",
+          "retry.py",
+          "snapshot.py",
+          "queue.py",
+          "cache.md",
+          "session.md"
+        ],
+        "returncode": 0,
+        "latency_ms": 62.1799579821527,
+        "peak_rss_bytes": 26918912,
+        "cpu_seconds": 0.03
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+.ravel/
+.env*
+benchmarks/work/
+TASK_STATE.md
+dist-final/
+release-artifacts/

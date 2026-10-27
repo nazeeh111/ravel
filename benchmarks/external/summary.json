@@ -1,0 +1,236 @@
+[
+  {
+    "run": "codanna-semantic.json",
+    "queries": 32,
+    "index_bytes": 89988,
+    "p50_ms": 637.4362495262176,
+    "p95_ms": 984.5566250151023,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "faiss.json",
+    "queries": 32,
+    "index_bytes": 56444,
+    "p50_ms": 81.17883349768817,
+    "p95_ms": 920.121792005375,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "grepai-semantic.json",
+    "queries": 32,
+    "index_bytes": 104310,
+    "p50_ms": 72.90737453149632,
+    "p95_ms": 194.7578330291435,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "leann.json",
+    "queries": 32,
+    "index_bytes": 55043,
+    "p50_ms": 280.5356460157782,
+    "p95_ms": 4517.112166970037,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "qmd-bm25.json",
+    "queries": 32,
+    "index_bytes": 208896,
+    "p50_ms": 564.4102710066363,
+    "p95_ms": 1062.3470839345828,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 0.5,
+      "hit_at_5": 0.5,
+      "mrr_at_5": 0.5
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "mrr_at_5": 0.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "qmd-vector.json",
+    "queries": 32,
+    "index_bytes": 3399680,
+    "p50_ms": 4614.703729457688,
+    "p95_ms": 28404.361333930865,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "ravel-lexical-cli.json",
+    "queries": 32,
+    "index_bytes": 86016,
+    "p50_ms": 301.3331250404008,
+    "p95_ms": 513.2190419826657,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 0.90625,
+      "hit_at_5": 0.9375,
+      "mrr_at_5": 0.9166666666666666
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 0.8125,
+      "hit_at_5": 0.875,
+      "mrr_at_5": 0.8333333333333334
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "ravel-matched-auto.json",
+    "queries": 32,
+    "index_bytes": 94208,
+    "p50_ms": 94.96352053247392,
+    "p95_ms": 116.24229105655104,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  },
+  {
+    "run": "ravel-matched-semantic.json",
+    "queries": 32,
+    "index_bytes": 94208,
+    "p50_ms": 112.55154194077477,
+    "p95_ms": 214.93320807348937,
+    "error_count": 0,
+    "all": {
+      "n": 32,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "natural": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    },
+    "identifier": {
+      "n": 16,
+      "hit_at_1": 1.0,
+      "hit_at_5": 1.0,
+      "mrr_at_5": 1.0
+    }
+  }
+]

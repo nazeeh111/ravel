@@ -1,0 +1,258 @@
+[
+  {
+    "query": "How do requests recover after temporary network failures?",
+    "relevant": [
+      "retry.md",
+      "retry.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "Where is ownership of a distributed lock extended?",
+    "relevant": [
+      "lease.md",
+      "lease.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How are discounts and tax included in a bill?",
+    "relevant": [
+      "invoice.md",
+      "invoice.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "What removes idle login sessions?",
+    "relevant": [
+      "session.md",
+      "session.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How are backups protected against interrupted writes?",
+    "relevant": [
+      "snapshot.md",
+      "snapshot.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "What happens to pending jobs during graceful shutdown?",
+    "relevant": [
+      "queue.md",
+      "queue.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "Where are corrupted downloaded packages rejected?",
+    "relevant": [
+      "checksum.md",
+      "checksum.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How can a client continue reading the next page of records?",
+    "relevant": [
+      "pagination.md",
+      "pagination.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "Where are credentials removed from diagnostics?",
+    "relevant": [
+      "redaction.md",
+      "redaction.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How is excessive incoming traffic limited?",
+    "relevant": [
+      "throttle.md",
+      "throttle.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "What prevents repeated webhook delivery from applying an operation twice?",
+    "relevant": [
+      "dedup.md",
+      "dedup.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How are equivalent international names compared?",
+    "relevant": [
+      "unicode.md",
+      "unicode.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "Which cached values are removed when storage fills up?",
+    "relevant": [
+      "cache.md",
+      "cache.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "Where do database reads go if every replica is unavailable?",
+    "relevant": [
+      "routing.md",
+      "routing.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "How can an interrupted large file transfer resume?",
+    "relevant": [
+      "upload.md",
+      "upload.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "What restores data after a database operation fails?",
+    "relevant": [
+      "transaction.md",
+      "transaction.py"
+    ],
+    "kind": "natural"
+  },
+  {
+    "query": "retry_request",
+    "relevant": [
+      "retry.md",
+      "retry.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "renew_lease",
+    "relevant": [
+      "lease.md",
+      "lease.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "calculate_invoice",
+    "relevant": [
+      "invoice.md",
+      "invoice.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "expire_session",
+    "relevant": [
+      "session.md",
+      "session.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "save_snapshot",
+    "relevant": [
+      "snapshot.md",
+      "snapshot.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "drain_queue",
+    "relevant": [
+      "queue.md",
+      "queue.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "verify_checksum",
+    "relevant": [
+      "checksum.md",
+      "checksum.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "paginate_cursor",
+    "relevant": [
+      "pagination.md",
+      "pagination.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "redact_secrets",
+    "relevant": [
+      "redaction.md",
+      "redaction.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "consume_bucket",
+    "relevant": [
+      "throttle.md",
+      "throttle.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "deduplicate_events",
+    "relevant": [
+      "dedup.md",
+      "dedup.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "normalize_name",
+    "relevant": [
+      "unicode.md",
+      "unicode.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "evict_cache",
+    "relevant": [
+      "cache.md",
+      "cache.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "select_replica",
+    "relevant": [
+      "routing.md",
+      "routing.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "assemble_upload",
+    "relevant": [
+      "upload.md",
+      "upload.py"
+    ],
+    "kind": "identifier"
+  },
+  {
+    "query": "rollback_transaction",
+    "relevant": [
+      "transaction.md",
+      "transaction.py"
+    ],
+    "kind": "identifier"
+  }
+]

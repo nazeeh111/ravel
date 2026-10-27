@@ -1,0 +1,752 @@
+{
+  "tool": "faiss",
+  "version": "leann 0.3.8 / faiss 1.15.1",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "mode": "IndexFlatIP normalized float32 exact, top 5",
+  "index_seconds": 3.597778041032143,
+  "index_bytes": 56444,
+  "model_bytes": 91578455,
+  "model_prepare_seconds": 3.5583259999984875,
+  "first_query_ms": 1268.09708296787,
+  "query_timing": "warm in-process API after one warm-up; not comparable to CLI startup measurements",
+  "peak_query_tree_rss_bytes": 241352704,
+  "query_tree_sampling_ms": 20,
+  "queries": [
+    {
+      "query": "How do requests recover after temporary network failures?",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 86.36179193854332,
+      "files": [
+        "retry.py",
+        "retry.md",
+        "routing.md",
+        "routing.py",
+        "upload.py"
+      ],
+      "scores": [
+        0.5258693695068359,
+        0.4564841389656067,
+        0.30549871921539307,
+        0.25138458609580994,
+        0.2492474764585495
+      ]
+    },
+    {
+      "query": "Where is ownership of a distributed lock extended?",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 127.8689579339698,
+      "files": [
+        "lease.md",
+        "lease.py",
+        "transaction.md",
+        "transaction.py",
+        "cache.md"
+      ],
+      "scores": [
+        0.5010797381401062,
+        0.41224825382232666,
+        0.2238585352897644,
+        0.19670778512954712,
+        0.12751233577728271
+      ]
+    },
+    {
+      "query": "How are discounts and tax included in a bill?",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 344.79762508999556,
+      "files": [
+        "invoice.py",
+        "invoice.md",
+        "throttle.py",
+        "throttle.md",
+        "dedup.py"
+      ],
+      "scores": [
+        0.5288055539131165,
+        0.5136398673057556,
+        0.1587233692407608,
+        0.12928679585456848,
+        0.10966795682907104
+      ]
+    },
+    {
+      "query": "What removes idle login sessions?",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 455.5469999322668,
+      "files": [
+        "session.md",
+        "session.py",
+        "redaction.md",
+        "cache.py",
+        "cache.md"
+      ],
+      "scores": [
+        0.516463041305542,
+        0.4919496774673462,
+        0.16990654170513153,
+        0.1683218777179718,
+        0.16274237632751465
+      ]
+    },
+    {
+      "query": "How are backups protected against interrupted writes?",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 33.16541702952236,
+      "files": [
+        "snapshot.md",
+        "snapshot.py",
+        "upload.py",
+        "upload.md",
+        "transaction.md"
+      ],
+      "scores": [
+        0.47057920694351196,
+        0.4335119128227234,
+        0.35198745131492615,
+        0.34918704628944397,
+        0.31822580099105835
+      ]
+    },
+    {
+      "query": "What happens to pending jobs during graceful shutdown?",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 429.7816250473261,
+      "files": [
+        "queue.md",
+        "queue.py",
+        "upload.md",
+        "upload.py",
+        "transaction.md"
+      ],
+      "scores": [
+        0.5853605270385742,
+        0.5405647158622742,
+        0.22784577310085297,
+        0.21689236164093018,
+        0.20548276603221893
+      ]
+    },
+    {
+      "query": "Where are corrupted downloaded packages rejected?",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 36.91295790486038,
+      "files": [
+        "checksum.md",
+        "checksum.py",
+        "transaction.md",
+        "retry.md",
+        "upload.md"
+      ],
+      "scores": [
+        0.4308035969734192,
+        0.3871707320213318,
+        0.18546952307224274,
+        0.15606963634490967,
+        0.15528985857963562
+      ]
+    },
+    {
+      "query": "How can a client continue reading the next page of records?",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 446.4674580376595,
+      "files": [
+        "pagination.md",
+        "pagination.py",
+        "routing.md",
+        "routing.py",
+        "retry.py"
+      ],
+      "scores": [
+        0.46741044521331787,
+        0.4601597189903259,
+        0.24231362342834473,
+        0.22500696778297424,
+        0.22468820214271545
+      ]
+    },
+    {
+      "query": "Where are credentials removed from diagnostics?",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 363.82737499661744,
+      "files": [
+        "redaction.md",
+        "redaction.py",
+        "session.md",
+        "session.py",
+        "transaction.md"
+      ],
+      "scores": [
+        0.3479647636413574,
+        0.33463189005851746,
+        0.17296528816223145,
+        0.16695639491081238,
+        0.10411882400512695
+      ]
+    },
+    {
+      "query": "How is excessive incoming traffic limited?",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 73.2765420107171,
+      "files": [
+        "throttle.md",
+        "throttle.py",
+        "retry.md",
+        "retry.py",
+        "routing.md"
+      ],
+      "scores": [
+        0.2912525534629822,
+        0.27063533663749695,
+        0.21713921427726746,
+        0.19419726729393005,
+        0.15342599153518677
+      ]
+    },
+    {
+      "query": "What prevents repeated webhook delivery from applying an operation twice?",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 344.94754089973867,
+      "files": [
+        "dedup.md",
+        "dedup.py",
+        "retry.md",
+        "retry.py",
+        "session.md"
+      ],
+      "scores": [
+        0.6013752222061157,
+        0.5450834035873413,
+        0.30612871050834656,
+        0.24199910461902618,
+        0.22017346322536469
+      ]
+    },
+    {
+      "query": "How are equivalent international names compared?",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 83.23687501251698,
+      "files": [
+        "unicode.py",
+        "unicode.md",
+        "snapshot.py",
+        "dedup.py",
+        "snapshot.md"
+      ],
+      "scores": [
+        0.3370770215988159,
+        0.33222687244415283,
+        0.0892852395772934,
+        0.06287902593612671,
+        0.061779171228408813
+      ]
+    },
+    {
+      "query": "Which cached values are removed when storage fills up?",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 38.916666992008686,
+      "files": [
+        "cache.py",
+        "cache.md",
+        "snapshot.py",
+        "snapshot.md",
+        "throttle.py"
+      ],
+      "scores": [
+        0.48376160860061646,
+        0.39446622133255005,
+        0.2732701003551483,
+        0.22993186116218567,
+        0.15208879113197327
+      ]
+    },
+    {
+      "query": "Where do database reads go if every replica is unavailable?",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 98.42875006143004,
+      "files": [
+        "routing.py",
+        "routing.md",
+        "retry.py",
+        "retry.md",
+        "snapshot.md"
+      ],
+      "scores": [
+        0.49693185091018677,
+        0.4547552168369293,
+        0.24282027781009674,
+        0.22098718583583832,
+        0.21604467928409576
+      ]
+    },
+    {
+      "query": "How can an interrupted large file transfer resume?",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 29.025750001892447,
+      "files": [
+        "upload.md",
+        "upload.py",
+        "snapshot.md",
+        "retry.md",
+        "retry.py"
+      ],
+      "scores": [
+        0.6387776136398315,
+        0.6136917471885681,
+        0.2908615171909332,
+        0.2795702815055847,
+        0.25924184918403625
+      ]
+    },
+    {
+      "query": "What restores data after a database operation fails?",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 38.30070898402482,
+      "files": [
+        "transaction.md",
+        "transaction.py",
+        "snapshot.md",
+        "snapshot.py",
+        "retry.py"
+      ],
+      "scores": [
+        0.5119606852531433,
+        0.48091086745262146,
+        0.4163335859775543,
+        0.4035157561302185,
+        0.27125900983810425
+      ]
+    },
+    {
+      "query": "retry_request",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 2849.806166952476,
+      "files": [
+        "retry.py",
+        "retry.md",
+        "transaction.md",
+        "transaction.py",
+        "session.md"
+      ],
+      "scores": [
+        0.8009795546531677,
+        0.75539231300354,
+        0.42613959312438965,
+        0.3701205849647522,
+        0.33179771900177
+      ]
+    },
+    {
+      "query": "renew_lease",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 920.121792005375,
+      "files": [
+        "lease.py",
+        "lease.md",
+        "cache.py",
+        "session.py",
+        "cache.md"
+      ],
+      "scores": [
+        0.7006505131721497,
+        0.6449363231658936,
+        0.27146756649017334,
+        0.25022977590560913,
+        0.24884620308876038
+      ]
+    },
+    {
+      "query": "calculate_invoice",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 895.6495419843122,
+      "files": [
+        "invoice.py",
+        "invoice.md",
+        "throttle.py",
+        "throttle.md",
+        "upload.py"
+      ],
+      "scores": [
+        0.7951446175575256,
+        0.789522647857666,
+        0.24810540676116943,
+        0.19187374413013458,
+        0.16958217322826385
+      ]
+    },
+    {
+      "query": "expire_session",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 38.596667000092566,
+      "files": [
+        "session.py",
+        "session.md",
+        "cache.py",
+        "cache.md",
+        "lease.py"
+      ],
+      "scores": [
+        0.8020840883255005,
+        0.7267376184463501,
+        0.37111371755599976,
+        0.3243224322795868,
+        0.2865070700645447
+      ]
+    },
+    {
+      "query": "save_snapshot",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 76.50533400010318,
+      "files": [
+        "snapshot.py",
+        "snapshot.md",
+        "upload.py",
+        "upload.md",
+        "transaction.md"
+      ],
+      "scores": [
+        0.7483525276184082,
+        0.6393079161643982,
+        0.36186206340789795,
+        0.3382423520088196,
+        0.29449689388275146
+      ]
+    },
+    {
+      "query": "drain_queue",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 79.12079198285937,
+      "files": [
+        "queue.py",
+        "queue.md",
+        "throttle.md",
+        "throttle.py",
+        "cache.py"
+      ],
+      "scores": [
+        0.7066737413406372,
+        0.6320376396179199,
+        0.39103320240974426,
+        0.3864328861236572,
+        0.2737152576446533
+      ]
+    },
+    {
+      "query": "verify_checksum",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 11.443750001490116,
+      "files": [
+        "checksum.py",
+        "checksum.md",
+        "upload.py",
+        "redaction.md",
+        "transaction.md"
+      ],
+      "scores": [
+        0.6963631510734558,
+        0.6464353203773499,
+        0.23152996599674225,
+        0.22935451567173004,
+        0.2171245813369751
+      ]
+    },
+    {
+      "query": "paginate_cursor",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 86.35154203511775,
+      "files": [
+        "pagination.py",
+        "pagination.md",
+        "routing.py",
+        "transaction.md",
+        "transaction.py"
+      ],
+      "scores": [
+        0.7870810031890869,
+        0.7595959305763245,
+        0.19385889172554016,
+        0.1546836644411087,
+        0.15401290357112885
+      ]
+    },
+    {
+      "query": "redact_secrets",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 78.55458301492035,
+      "files": [
+        "redaction.md",
+        "redaction.py",
+        "unicode.md",
+        "unicode.py",
+        "cache.py"
+      ],
+      "scores": [
+        0.7483406662940979,
+        0.7353091239929199,
+        0.22228018939495087,
+        0.19366513192653656,
+        0.17111849784851074
+      ]
+    },
+    {
+      "query": "consume_bucket",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 36.709042033180594,
+      "files": [
+        "throttle.py",
+        "throttle.md",
+        "upload.py",
+        "snapshot.py",
+        "cache.py"
+      ],
+      "scores": [
+        0.7021079063415527,
+        0.6313493847846985,
+        0.2625212073326111,
+        0.25389739871025085,
+        0.2433495670557022
+      ]
+    },
+    {
+      "query": "deduplicate_events",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 786.2503340002149,
+      "files": [
+        "dedup.py",
+        "dedup.md",
+        "unicode.md",
+        "unicode.py",
+        "snapshot.md"
+      ],
+      "scores": [
+        0.753879725933075,
+        0.7186397314071655,
+        0.18368740379810333,
+        0.16556642949581146,
+        0.14943216741085052
+      ]
+    },
+    {
+      "query": "normalize_name",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 51.90466693602502,
+      "files": [
+        "unicode.py",
+        "unicode.md",
+        "redaction.py",
+        "snapshot.py",
+        "lease.py"
+      ],
+      "scores": [
+        0.6243226528167725,
+        0.46405351161956787,
+        0.20738238096237183,
+        0.1914903074502945,
+        0.18620145320892334
+      ]
+    },
+    {
+      "query": "evict_cache",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 49.403666984289885,
+      "files": [
+        "cache.md",
+        "cache.py",
+        "session.py",
+        "session.md",
+        "snapshot.md"
+      ],
+      "scores": [
+        0.7310317754745483,
+        0.7023898363113403,
+        0.27563953399658203,
+        0.2665378749370575,
+        0.24103476107120514
+      ]
+    },
+    {
+      "query": "select_replica",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 61.29987502936274,
+      "files": [
+        "routing.py",
+        "routing.md",
+        "retry.md",
+        "throttle.md",
+        "pagination.md"
+      ],
+      "scores": [
+        0.7194746732711792,
+        0.5367354154586792,
+        0.2346230447292328,
+        0.2317601442337036,
+        0.22085833549499512
+      ]
+    },
+    {
+      "query": "assemble_upload",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 88.8369589811191,
+      "files": [
+        "upload.md",
+        "upload.py",
+        "checksum.md",
+        "snapshot.md",
+        "checksum.py"
+      ],
+      "scores": [
+        0.6175369024276733,
+        0.6139031648635864,
+        0.21487925946712494,
+        0.20719017088413239,
+        0.1883895993232727
+      ]
+    },
+    {
+      "query": "rollback_transaction",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 14.379583997651935,
+      "files": [
+        "transaction.py",
+        "transaction.md",
+        "snapshot.py",
+        "lease.py",
+        "snapshot.md"
+      ],
+      "scores": [
+        0.7539050579071045,
+        0.7125545740127563,
+        0.3010844886302948,
+        0.29791051149368286,
+        0.2927197217941284
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "RAVEL — Find the thread",
+  "duration_seconds": 18,
+  "fps": 30,
+  "width": 1280,
+  "height": 720,
+  "audio": "silent",
+  "scenes": [
+    {"start": 0, "end": 3, "type": "original_identity", "title": "RAVEL", "copy": "The right context. Almost no overhead."},
+    {"start": 3, "end": 7, "type": "actual_inspector_capture", "asset": "symbol-search.jpg", "title": "Find exact symbols."},
+    {"start": 7, "end": 11, "type": "actual_inspector_capture", "asset": "natural-search.jpg", "title": "Ask in plain language."},
+    {"start": 11, "end": 14, "type": "actual_inspector_capture", "asset": "source-detail.jpg", "title": "Follow verified source evidence."},
+    {"start": 14, "end": 18, "type": "original_identity", "title": "RAVEL", "commands": ["ravel index .", "ravel inspect"]}
+  ]
+}

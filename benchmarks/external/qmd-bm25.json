@@ -1,0 +1,484 @@
+{
+  "tool": "qmd",
+  "mode": "bm25",
+  "hardware": {
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "corpus_files": 32,
+  "corpus_bytes": 5869,
+  "index": {
+    "returncode": 0,
+    "latency_ms": 563.5312910890207,
+    "peak_rss_bytes": 76185600,
+    "cpu_seconds": 0.32
+  },
+  "index_bytes": 208896,
+  "query_timing": "fresh CLI process per query, OS/model cache warm; includes startup",
+  "queries": [
+    {
+      "query": "How do requests recover after temporary network failures?",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 275.236124987714,
+      "peak_rss_bytes": 70500352,
+      "cpu_seconds": 0.21000000000000002,
+      "files": []
+    },
+    {
+      "query": "Where is ownership of a distributed lock extended?",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 518.5857499018312,
+      "peak_rss_bytes": 70615040,
+      "cpu_seconds": 0.25,
+      "files": []
+    },
+    {
+      "query": "How are discounts and tax included in a bill?",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 336.9989169295877,
+      "peak_rss_bytes": 70270976,
+      "cpu_seconds": 0.22000000000000003,
+      "files": []
+    },
+    {
+      "query": "What removes idle login sessions?",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 719.0740000223741,
+      "peak_rss_bytes": 70664192,
+      "cpu_seconds": 0.24,
+      "files": []
+    },
+    {
+      "query": "How are backups protected against interrupted writes?",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 804.1290409164503,
+      "peak_rss_bytes": 70909952,
+      "cpu_seconds": 0.25,
+      "files": []
+    },
+    {
+      "query": "What happens to pending jobs during graceful shutdown?",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 888.8910000678152,
+      "peak_rss_bytes": 70238208,
+      "cpu_seconds": 0.22999999999999998,
+      "files": []
+    },
+    {
+      "query": "Where are corrupted downloaded packages rejected?",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 592.1735839219764,
+      "peak_rss_bytes": 70828032,
+      "cpu_seconds": 0.22999999999999998,
+      "files": []
+    },
+    {
+      "query": "How can a client continue reading the next page of records?",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 343.64104201085865,
+      "peak_rss_bytes": 70483968,
+      "cpu_seconds": 0.21000000000000002,
+      "files": []
+    },
+    {
+      "query": "Where are credentials removed from diagnostics?",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 323.934750049375,
+      "peak_rss_bytes": 70549504,
+      "cpu_seconds": 0.21000000000000002,
+      "files": []
+    },
+    {
+      "query": "How is excessive incoming traffic limited?",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 570.3364999499172,
+      "peak_rss_bytes": 70746112,
+      "cpu_seconds": 0.25,
+      "files": []
+    },
+    {
+      "query": "What prevents repeated webhook delivery from applying an operation twice?",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 1484.6785409608856,
+      "peak_rss_bytes": 55721984,
+      "cpu_seconds": 0.27,
+      "files": []
+    },
+    {
+      "query": "How are equivalent international names compared?",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 1062.3470839345828,
+      "peak_rss_bytes": 70680576,
+      "cpu_seconds": 0.23,
+      "files": []
+    },
+    {
+      "query": "Which cached values are removed when storage fills up?",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 607.7785840025172,
+      "peak_rss_bytes": 70844416,
+      "cpu_seconds": 0.19,
+      "files": []
+    },
+    {
+      "query": "Where do database reads go if every replica is unavailable?",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 446.97516702581197,
+      "peak_rss_bytes": 70778880,
+      "cpu_seconds": 0.22,
+      "files": []
+    },
+    {
+      "query": "How can an interrupted large file transfer resume?",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 434.92516700644046,
+      "peak_rss_bytes": 70811648,
+      "cpu_seconds": 0.22999999999999998,
+      "files": []
+    },
+    {
+      "query": "What restores data after a database operation fails?",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "natural",
+      "returncode": 0,
+      "latency_ms": 684.3041670508683,
+      "peak_rss_bytes": 70729728,
+      "cpu_seconds": 0.21000000000000002,
+      "files": []
+    },
+    {
+      "query": "retry_request",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 761.321583064273,
+      "peak_rss_bytes": 70451200,
+      "cpu_seconds": 0.24,
+      "files": [
+        "retry.md",
+        "retry.py"
+      ]
+    },
+    {
+      "query": "renew_lease",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 558.4840420633554,
+      "peak_rss_bytes": 70942720,
+      "cpu_seconds": 0.22999999999999998,
+      "files": [
+        "lease.md",
+        "lease.py"
+      ]
+    },
+    {
+      "query": "calculate_invoice",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 1011.2273750128224,
+      "peak_rss_bytes": 71090176,
+      "cpu_seconds": 0.24,
+      "files": [
+        "invoice.md",
+        "invoice.py"
+      ]
+    },
+    {
+      "query": "expire_session",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 950.3193750279024,
+      "peak_rss_bytes": 70975488,
+      "cpu_seconds": 0.25,
+      "files": [
+        "session.md",
+        "session.py"
+      ]
+    },
+    {
+      "query": "save_snapshot",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 839.2610840965062,
+      "peak_rss_bytes": 70664192,
+      "cpu_seconds": 0.23,
+      "files": [
+        "snapshot.md",
+        "snapshot.py"
+      ]
+    },
+    {
+      "query": "drain_queue",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 750.6292499601841,
+      "peak_rss_bytes": 70352896,
+      "cpu_seconds": 0.2,
+      "files": [
+        "queue.md",
+        "queue.py"
+      ]
+    },
+    {
+      "query": "verify_checksum",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 947.0061250030994,
+      "peak_rss_bytes": 71057408,
+      "cpu_seconds": 0.21000000000000002,
+      "files": [
+        "checksum.md",
+        "checksum.py"
+      ]
+    },
+    {
+      "query": "paginate_cursor",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 572.8963749716058,
+      "peak_rss_bytes": 70664192,
+      "cpu_seconds": 0.2,
+      "files": [
+        "pagination.md",
+        "pagination.py"
+      ]
+    },
+    {
+      "query": "redact_secrets",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 357.31745895463973,
+      "peak_rss_bytes": 70860800,
+      "cpu_seconds": 0.22,
+      "files": [
+        "redaction.md",
+        "redaction.py"
+      ]
+    },
+    {
+      "query": "consume_bucket",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 274.6097920462489,
+      "peak_rss_bytes": 70926336,
+      "cpu_seconds": 0.2,
+      "files": [
+        "throttle.md",
+        "throttle.py"
+      ]
+    },
+    {
+      "query": "deduplicate_events",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 223.40424999129027,
+      "peak_rss_bytes": 70565888,
+      "cpu_seconds": 0.19,
+      "files": [
+        "dedup.md",
+        "dedup.py"
+      ]
+    },
+    {
+      "query": "normalize_name",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 376.047124969773,
+      "peak_rss_bytes": 70926336,
+      "cpu_seconds": 0.23,
+      "files": [
+        "unicode.md",
+        "unicode.py"
+      ]
+    },
+    {
+      "query": "evict_cache",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 516.2462079897523,
+      "peak_rss_bytes": 70811648,
+      "cpu_seconds": 0.23,
+      "files": [
+        "cache.md",
+        "cache.py"
+      ]
+    },
+    {
+      "query": "select_replica",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 235.68920802790672,
+      "peak_rss_bytes": 70795264,
+      "cpu_seconds": 0.2,
+      "files": [
+        "routing.md",
+        "routing.py"
+      ]
+    },
+    {
+      "query": "assemble_upload",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 248.90295800287277,
+      "peak_rss_bytes": 71008256,
+      "cpu_seconds": 0.2,
+      "files": [
+        "upload.md",
+        "upload.py"
+      ]
+    },
+    {
+      "query": "rollback_transaction",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "identifier",
+      "returncode": 0,
+      "latency_ms": 247.82062496524304,
+      "peak_rss_bytes": 70598656,
+      "cpu_seconds": 0.2,
+      "files": [
+        "transaction.md",
+        "transaction.py"
+      ]
+    }
+  ]
+}

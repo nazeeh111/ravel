@@ -1,0 +1,530 @@
+[
+  {
+    "id": "train-auth-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "verify_secret",
+    "gold": [
+      "src/auth.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-auth-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "check whether a supplied password matches the stored digest",
+    "gold": [
+      "src/auth.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-backoff-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "retry_delay",
+    "gold": [
+      "src/backoff.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-backoff-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "wait longer between repeated failures of a network request",
+    "gold": [
+      "src/backoff.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-billing-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "amount_due",
+    "gold": [
+      "src/billing.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-billing-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "calculate the final customer bill with a coupon",
+    "gold": [
+      "src/billing.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-pagination-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "window",
+    "gold": [
+      "src/pagination.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-pagination-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "return the next page of records from a list",
+    "gold": [
+      "src/pagination.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-queue-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "drain_pending",
+    "gold": [
+      "src/queue.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-queue-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "process outstanding work in the order it arrived",
+    "gold": [
+      "src/queue.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-csv-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "escape_field",
+    "gold": [
+      "src/csv.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-csv-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "make spreadsheet cell text safe when it contains quotation marks",
+    "gold": [
+      "src/csv.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-distance-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "manhattan",
+    "gold": [
+      "src/distance.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-distance-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "how far apart are two grid cells if diagonal moves are forbidden",
+    "gold": [
+      "src/distance.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-memo-exact",
+    "split": "train",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "remember",
+    "gold": [
+      "src/memo.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-memo-intent",
+    "split": "train",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "avoid repeating expensive calculations for the same input",
+    "gold": [
+      "src/memo.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-backup-exact",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "snapshot rotation",
+    "gold": [
+      "notes/backup.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-backup-intent",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "recover files after accidental deletion from a laptop",
+    "gold": [
+      "notes/backup.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-accessibility-exact",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "keyboard navigation",
+    "gold": [
+      "notes/accessibility.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-accessibility-intent",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "make an interface usable without a mouse",
+    "gold": [
+      "notes/accessibility.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-incident-exact",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "service incident procedure",
+    "gold": [
+      "notes/incident.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-incident-intent",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "what should the team do during an outage",
+    "gold": [
+      "notes/incident.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "train-privacy-exact",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "data minimization",
+    "gold": [
+      "notes/privacy.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "train-privacy-intent",
+    "split": "train",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "reduce how much customer information the application retains",
+    "gold": [
+      "notes/privacy.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-atomic-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "replace_document",
+    "gold": [
+      "src/atomic.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-atomic-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "prevent readers from observing a partially written file",
+    "gold": [
+      "src/atomic.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-expiry-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "still_valid",
+    "gold": [
+      "src/expiry.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-expiry-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "check if a stored response is too old to reuse",
+    "gold": [
+      "src/expiry.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-rate-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "take_token",
+    "gold": [
+      "src/rate.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-rate-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "throttle clients that send too many requests",
+    "gold": [
+      "src/rate.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-sanitize-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "safe_child",
+    "gold": [
+      "src/sanitize.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-sanitize-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "stop a supplied filename from accessing a parent directory",
+    "gold": [
+      "src/sanitize.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-topology-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "ready_nodes",
+    "gold": [
+      "src/topology.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-topology-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "which jobs can start after their prerequisite jobs finish",
+    "gold": [
+      "src/topology.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-dedup-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "unique_ordered",
+    "gold": [
+      "src/dedup.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-dedup-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "eliminate repeated list entries without rearranging the remaining entries",
+    "gold": [
+      "src/dedup.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-stream-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "batches",
+    "gold": [
+      "src/stream.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-stream-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "process a huge input incrementally with limited memory",
+    "gold": [
+      "src/stream.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-checksum-exact",
+    "split": "test",
+    "kind": "code",
+    "query_type": "exact",
+    "query": "fingerprint",
+    "gold": [
+      "src/checksum.py"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-checksum-intent",
+    "split": "test",
+    "kind": "code",
+    "query_type": "intent",
+    "query": "tell whether file contents changed even if the modification timestamp stayed the same",
+    "gold": [
+      "src/checksum.py"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-keys-exact",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "signing key rotation",
+    "gold": [
+      "notes/keys.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-keys-intent",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "replace a compromised signature verification key safely",
+    "gold": [
+      "notes/keys.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-restore-exact",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "database recovery",
+    "gold": [
+      "notes/restore.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-restore-intent",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "bring back a corrupted relational store without losing recent transactions",
+    "gold": [
+      "notes/restore.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-offline-exact",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "disconnected operation",
+    "gold": [
+      "notes/offline.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-offline-intent",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "allow people to keep working when the internet goes away",
+    "gold": [
+      "notes/offline.md"
+    ],
+    "token_budget": 4096
+  },
+  {
+    "id": "test-release-exact",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "exact",
+    "query": "release verification",
+    "gold": [
+      "notes/release.md"
+    ],
+    "token_budget": 1200
+  },
+  {
+    "id": "test-release-intent",
+    "split": "test",
+    "kind": "doc",
+    "query_type": "intent",
+    "query": "prove a distributed software package actually works for a new user",
+    "gold": [
+      "notes/release.md"
+    ],
+    "token_budget": 4096
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "hardware": {
+    "cpu": "Apple M4",
+    "ram_bytes": 34359738368,
+    "os": "macOS",
+    "arch": "arm64"
+  },
+  "versions": {
+    "leann": "0.3.8",
+    "faiss": "1.15.1",
+    "qmd": "2.8.3",
+    "codanna": "0.17.1",
+    "grepai": "1.1.0"
+  },
+  "source_revisions": {
+    "qmd": "86d2365d17fc682e491c2c53d1e4a884aee8682a",
+    "codanna_release_tag_object": "c0a1e1a11344286baab3b06e583c41a3e9383d12",
+    "grepai": "dd38459f31a8b25e49b886511a15667caf43478b"
+  },
+  "model_storage_bytes": {
+    "codanna_minilm_onnx": 91102076,
+    "leann_faiss_minilm": 91578455,
+    "qmd_embeddinggemma": 333590944,
+    "qmd_unused_exploratory_expansion": 1282438912,
+    "grepai_ollama_all_minilm": 45960996
+  },
+  "gpu_utilization": "not measured",
+  "concurrency": "Some runs overlapped other development/model work. Treat latency samples as observed microbenchmark snapshots, not isolated system measurements.",
+  "grepai_model_service_snapshot": [],
+  "ravel_source_note": "Final RAVEL rows rerun in fresh generated fixtures with source hashes unchanged before and after measurement.",
+  "ravel_source_sha256": {
+    "planner.py": "6db4192b7a02467499372996c04e58795ce58be61d11a0fb9baa13ca9e30b7e8",
+    "server.py": "2667114db930e217bbd3c3e57ffcffa1634445e613e50eef6185310c8b3c58c2",
+    "__init__.py": "66c8156ba14fc9d889a8684fafc813a1c0432986e99dcba680e17a7b370f3af8",
+    "sources.py": "a89594b5863be1fb65389eb9245c5e843c08e2655165840c8a9e21f87909a627",
+    "engine.py": "9ca96518b3e3d8a8777d583d7df3426d4349662f4f8d7b202ee1eb176b9e080d",
+    "embeddings.py": "161cfabd5e5c10e1ca2626a300a69e52686334f46b6f01549e30de776bbe7e9f",
+    "cli.py": "6eb0b636a39cf22e531f5fb12ee16dc4c6a6b83f70075d740e63dbcf2f0e2822",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "capture_date_local": "2026-10-26",
+  "fixture": "examples/sample",
+  "capture_method": "CUA browser viewport screenshots from the real loopback RAVEL inspector; screenshot bytes saved without content edits",
+  "product_capture_types": [
+    "exact-symbol query",
+    "natural-language hybrid query",
+    "scrolled source evidence",
+    "390x844 mobile QA"
+  ],
+  "assets": {
+    "mobile-search.jpg": {
+      "sha256": "109a05d742b988b2b5fa11c95ad99aeec8150699ff33b123b834a27682b7a475",
+      "bytes": 39256
+    },
+    "natural-search.jpg": {
+      "sha256": "ee6476f163c2ea8c96786572682537d8f8ae79a9eebd324d265d46973622eb81",
+      "bytes": 69614
+    },
+    "source-detail.jpg": {
+      "sha256": "5d4bb25ec163a1f5afb94de5aa4a07263d5963decef46cc9f18d79dcc42bd07b",
+      "bytes": 80240
+    },
+    "symbol-search.jpg": {
+      "sha256": "a27b9f244ec4853b2166374e45b5c8dd0e3b71753359d6abefb743c54cc486d7",
+      "bytes": 67234
+    }
+  },
+  "inspector_source_sha256": "6388ae9f27088db146a46840910aa2eb66c1bd7fc9d3ed506a3c032427c502fe",
+  "fixture_source_sha256": {
+    "examples/sample/cache.py": "926950a8875cab5232b548019e74dca39b8ae26cf2d5409d82292ed7ef07be2a",
+    "examples/sample/notes.md": "719060f13048371d116e86eff1aa0ed0080eb243c8d7916374d616356b32bad5",
+    "examples/sample/retry.py": "6ee0945688833ecdc41247d572a700671af6bc2a5c219bc6765657667c629d0d"
+  },
+  "render_runtime": {
+    "python": "3.12.14",
+    "renderer": "Pillow 12.3.0 + FFmpeg 7.1, H.264 libx264"
+  },
+  "claims": "Functional example only. Snapshot montage, not real-time recording or benchmark."
+}

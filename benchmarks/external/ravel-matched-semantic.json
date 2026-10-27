@@ -1,0 +1,631 @@
+{
+  "tool": "ravel",
+  "mode": "semantic",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_note": "Injected model-matched MiniLM instead of product-default BGE. Int8 stored vectors.",
+  "index_seconds": 0.10995437507517636,
+  "materialize_seconds": 1.9343368749832734,
+  "index_bytes": 94208,
+  "query_timing": "warm in-process API after one warm-up, full source freshness scan included",
+  "first_query_ms": 91.28837508615106,
+  "peak_process_rss_bytes": 543309824,
+  "queries": [
+    {
+      "query": "How do requests recover after temporary network failures?",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 138.39133398141712,
+      "files": [
+        "retry.py",
+        "retry.md",
+        "routing.md",
+        "routing.py",
+        "upload.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2618,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "Where is ownership of a distributed lock extended?",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 130.68008294794708,
+      "files": [
+        "lease.md",
+        "lease.py",
+        "transaction.md",
+        "transaction.py",
+        "cache.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2555,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How are discounts and tax included in a bill?",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 132.13687506504357,
+      "files": [
+        "invoice.py",
+        "invoice.md",
+        "throttle.py",
+        "throttle.md",
+        "dedup.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2646,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "What removes idle login sessions?",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 133.42095806729048,
+      "files": [
+        "session.md",
+        "session.py",
+        "cache.py",
+        "redaction.md",
+        "cache.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2549,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How are backups protected against interrupted writes?",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 281.616291962564,
+      "files": [
+        "snapshot.md",
+        "snapshot.py",
+        "upload.py",
+        "upload.md",
+        "transaction.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2598,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "What happens to pending jobs during graceful shutdown?",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 142.6424579694867,
+      "files": [
+        "queue.md",
+        "queue.py",
+        "upload.py",
+        "upload.md",
+        "transaction.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2579,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "Where are corrupted downloaded packages rejected?",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 111.65362491738051,
+      "files": [
+        "checksum.md",
+        "checksum.py",
+        "transaction.md",
+        "retry.py",
+        "retry.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2617,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How can a client continue reading the next page of records?",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 185.47329201828688,
+      "files": [
+        "pagination.md",
+        "pagination.py",
+        "routing.py",
+        "routing.md",
+        "cache.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2541,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "Where are credentials removed from diagnostics?",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 108.56050008442253,
+      "files": [
+        "redaction.md",
+        "redaction.py",
+        "session.py",
+        "session.md",
+        "unicode.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2601,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How is excessive incoming traffic limited?",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 102.0896250847727,
+      "files": [
+        "throttle.md",
+        "throttle.py",
+        "retry.md",
+        "retry.py",
+        "routing.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2576,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "What prevents repeated webhook delivery from applying an operation twice?",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 118.2661660714075,
+      "files": [
+        "dedup.md",
+        "dedup.py",
+        "retry.md",
+        "retry.py",
+        "session.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2583,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How are equivalent international names compared?",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 106.07425007037818,
+      "files": [
+        "unicode.py",
+        "unicode.md",
+        "snapshot.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 1543,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "Which cached values are removed when storage fills up?",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 95.2927089529112,
+      "files": [
+        "cache.py",
+        "cache.md",
+        "snapshot.py",
+        "snapshot.md",
+        "routing.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2583,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "Where do database reads go if every replica is unavailable?",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 93.04287505801767,
+      "files": [
+        "routing.py",
+        "routing.md",
+        "retry.py",
+        "retry.md",
+        "snapshot.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2592,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "How can an interrupted large file transfer resume?",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 82.92104199063033,
+      "files": [
+        "upload.md",
+        "upload.py",
+        "snapshot.md",
+        "retry.md",
+        "retry.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2608,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "What restores data after a database operation fails?",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "natural",
+      "latency_ms": 88.80241599399596,
+      "files": [
+        "transaction.md",
+        "transaction.py",
+        "snapshot.md",
+        "snapshot.py",
+        "retry.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2640,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "retry_request",
+      "relevant": [
+        "retry.md",
+        "retry.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 214.93320807348937,
+      "files": [
+        "retry.py",
+        "retry.md",
+        "transaction.md",
+        "transaction.py",
+        "session.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2624,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "renew_lease",
+      "relevant": [
+        "lease.md",
+        "lease.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 127.27970804553479,
+      "files": [
+        "lease.py",
+        "lease.md",
+        "cache.py",
+        "session.py",
+        "cache.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2522,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "calculate_invoice",
+      "relevant": [
+        "invoice.md",
+        "invoice.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 160.5194170260802,
+      "files": [
+        "invoice.md",
+        "invoice.py",
+        "throttle.py",
+        "throttle.md",
+        "upload.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2661,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "expire_session",
+      "relevant": [
+        "session.md",
+        "session.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 142.4157910514623,
+      "files": [
+        "session.py",
+        "session.md",
+        "cache.py",
+        "cache.md",
+        "lease.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2548,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "save_snapshot",
+      "relevant": [
+        "snapshot.md",
+        "snapshot.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 121.17429194040596,
+      "files": [
+        "snapshot.py",
+        "snapshot.md",
+        "upload.py",
+        "upload.md",
+        "transaction.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2606,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "drain_queue",
+      "relevant": [
+        "queue.md",
+        "queue.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 117.3682080116123,
+      "files": [
+        "queue.py",
+        "queue.md",
+        "throttle.md",
+        "throttle.py",
+        "cache.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2558,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "verify_checksum",
+      "relevant": [
+        "checksum.md",
+        "checksum.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 97.85366710275412,
+      "files": [
+        "checksum.py",
+        "checksum.md",
+        "redaction.md",
+        "transaction.md",
+        "upload.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2597,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "paginate_cursor",
+      "relevant": [
+        "pagination.md",
+        "pagination.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 80.65354207064956,
+      "files": [
+        "pagination.md",
+        "pagination.py",
+        "routing.py",
+        "transaction.md",
+        "transaction.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2618,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "redact_secrets",
+      "relevant": [
+        "redaction.md",
+        "redaction.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 87.29554107412696,
+      "files": [
+        "redaction.md",
+        "redaction.py",
+        "unicode.md",
+        "unicode.py",
+        "cache.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2537,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "consume_bucket",
+      "relevant": [
+        "throttle.md",
+        "throttle.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 97.14891598559916,
+      "files": [
+        "throttle.py",
+        "throttle.md",
+        "upload.py",
+        "snapshot.py",
+        "queue.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2613,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "deduplicate_events",
+      "relevant": [
+        "dedup.md",
+        "dedup.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 113.84266603272408,
+      "files": [
+        "dedup.py",
+        "dedup.md",
+        "unicode.md",
+        "unicode.py",
+        "snapshot.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2542,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "normalize_name",
+      "relevant": [
+        "unicode.md",
+        "unicode.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 91.36670792941004,
+      "files": [
+        "unicode.py",
+        "unicode.md",
+        "snapshot.py",
+        "redaction.py",
+        "lease.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2581,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "evict_cache",
+      "relevant": [
+        "cache.md",
+        "cache.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 103.92058396246284,
+      "files": [
+        "cache.py",
+        "cache.md",
+        "session.py",
+        "session.md",
+        "snapshot.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2555,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "select_replica",
+      "relevant": [
+        "routing.md",
+        "routing.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 113.44945896416903,
+      "files": [
+        "routing.py",
+        "routing.md",
+        "retry.md",
+        "throttle.md",
+        "pagination.md"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2543,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "assemble_upload",
+      "relevant": [
+        "upload.md",
+        "upload.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 100.01920803915709,
+      "files": [
+        "upload.py",
+        "upload.md",
+        "checksum.md",
+        "snapshot.md",
+        "checksum.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2592,
+      "semantic_coverage": 1.0
+    },
+    {
+      "query": "rollback_transaction",
+      "relevant": [
+        "transaction.md",
+        "transaction.py"
+      ],
+      "kind": "identifier",
+      "latency_ms": 97.66587498597801,
+      "files": [
+        "transaction.py",
+        "transaction.md",
+        "snapshot.py",
+        "snapshot.md",
+        "lease.py"
+      ],
+      "strategy": "semantic",
+      "context_upper_bound": 2616,
+      "semantic_coverage": 1.0
+    }
+  ],
+  "source_sha256": {
+    "planner.py": "6db4192b7a02467499372996c04e58795ce58be61d11a0fb9baa13ca9e30b7e8",
+    "server.py": "2667114db930e217bbd3c3e57ffcffa1634445e613e50eef6185310c8b3c58c2",
+    "__init__.py": "66c8156ba14fc9d889a8684fafc813a1c0432986e99dcba680e17a7b370f3af8",
+    "sources.py": "a89594b5863be1fb65389eb9245c5e843c08e2655165840c8a9e21f87909a627",
+    "engine.py": "9ca96518b3e3d8a8777d583d7df3426d4349662f4f8d7b202ee1eb176b9e080d",
+    "embeddings.py": "161cfabd5e5c10e1ca2626a300a69e52686334f46b6f01549e30de776bbe7e9f",
+    "cli.py": "6eb0b636a39cf22e531f5fb12ee16dc4c6a6b83f70075d740e63dbcf2f0e2822",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+  },
+  "source_note": "Verified unchanged source hashes before and after final fresh-fixture run."
+}

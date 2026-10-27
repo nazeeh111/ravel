@@ -1,0 +1,6529 @@
+{
+  "configuration": {
+    "name": "heuristic_full",
+    "mode": "auto",
+    "cache_bytes": 8388608,
+    "materialize": true
+  },
+  "rows": [
+    {
+      "query_id": "train-auth-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/auth.py",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 69.725,
+        "tokens_used": 1046,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-auth-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/auth.py",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 56.825,
+        "tokens_used": 1046,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-auth-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/auth.py",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 64.815,
+        "tokens_used": 1046,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-auth-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/auth.py",
+        "src/expiry.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "src/sanitize.py",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 32,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 50.888,
+        "elapsed_ms": 108.368,
+        "tokens_used": 3760,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 32,
+        "semantic_coverage": 0.8888888888888888,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-auth-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/auth.py",
+        "src/expiry.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "src/sanitize.py",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 32,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 23.116,
+        "elapsed_ms": 111.353,
+        "tokens_used": 3760,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 32,
+        "semantic_coverage": 0.8888888888888888,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-auth-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/auth.py",
+        "src/expiry.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "src/sanitize.py",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 32,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.683,
+        "elapsed_ms": 69.495,
+        "tokens_used": 3760,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 32,
+        "semantic_coverage": 0.8888888888888888,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/backoff.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 55.592,
+        "tokens_used": 475,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/backoff.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 55.647,
+        "tokens_used": 475,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/backoff.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 49.147,
+        "tokens_used": 475,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/incident.md",
+        "src/expiry.py",
+        "src/topology.py",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.1111111111111111,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.587,
+        "tokens_used": 4077,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/incident.md",
+        "src/expiry.py",
+        "src/topology.py",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.1111111111111111,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 88.356,
+        "tokens_used": 4077,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backoff-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/incident.md",
+        "src/expiry.py",
+        "src/topology.py",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.1111111111111111,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 85.82,
+        "tokens_used": 4077,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 68.398,
+        "tokens_used": 546,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 89.378,
+        "tokens_used": 546,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 81.75,
+        "tokens_used": 546,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/billing.py",
+        "src/memo.py",
+        "src/rate.py",
+        "src/csv.py",
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 114.794,
+        "tokens_used": 3767,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/billing.py",
+        "src/memo.py",
+        "src/rate.py",
+        "src/csv.py",
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 140.525,
+        "tokens_used": 3767,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-billing-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/billing.py",
+        "src/memo.py",
+        "src/rate.py",
+        "src/csv.py",
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 100.084,
+        "tokens_used": 3767,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 59.58,
+        "tokens_used": 461,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 59.631,
+        "tokens_used": 461,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 57.218,
+        "tokens_used": 461,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/unrelated_02.md",
+        "notes/unrelated_06.md",
+        "src/backoff.py",
+        "notes/unrelated_00.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 35,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 24.526,
+        "elapsed_ms": 83.919,
+        "tokens_used": 4053,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 35,
+        "semantic_coverage": 0.9722222222222222,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/unrelated_02.md",
+        "notes/unrelated_06.md",
+        "src/backoff.py",
+        "notes/unrelated_00.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 35,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 20.034,
+        "elapsed_ms": 72.988,
+        "tokens_used": 4053,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 35,
+        "semantic_coverage": 0.9722222222222222,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-pagination-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/unrelated_02.md",
+        "notes/unrelated_06.md",
+        "src/backoff.py",
+        "notes/unrelated_00.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.4444444444444444,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 35,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 19.922,
+        "elapsed_ms": 91.052,
+        "tokens_used": 4053,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 35,
+        "semantic_coverage": 0.9722222222222222,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/queue.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 58.012,
+        "tokens_used": 1122,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/queue.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 100.047,
+        "tokens_used": 1122,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/queue.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 126.903,
+        "tokens_used": 1122,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "notes/incident.md",
+        "src/topology.py",
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/checksum.py",
+        "src/queue.py",
+        "notes/release.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.16666666666666666,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 120.338,
+        "tokens_used": 4018,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "notes/incident.md",
+        "src/topology.py",
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/checksum.py",
+        "src/queue.py",
+        "notes/release.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.16666666666666666,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 105.226,
+        "tokens_used": 4018,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-queue-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "notes/incident.md",
+        "src/topology.py",
+        "src/pagination.py",
+        "src/dedup.py",
+        "src/checksum.py",
+        "src/queue.py",
+        "notes/release.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.16666666666666666,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 130.498,
+        "tokens_used": 4018,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/csv.py",
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 60.96,
+        "tokens_used": 1181,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/csv.py",
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 52.724,
+        "tokens_used": 1181,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/csv.py",
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 49.593,
+        "tokens_used": 1181,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/csv.py",
+        "src/atomic.py",
+        "src/memo.py",
+        "src/sanitize.py",
+        "src/billing.py",
+        "src/expiry.py",
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.1,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 68.577,
+        "tokens_used": 3899,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/csv.py",
+        "src/atomic.py",
+        "src/memo.py",
+        "src/sanitize.py",
+        "src/billing.py",
+        "src/expiry.py",
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.1,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 76.344,
+        "tokens_used": 3899,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-csv-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/csv.py",
+        "src/atomic.py",
+        "src/memo.py",
+        "src/sanitize.py",
+        "src/billing.py",
+        "src/expiry.py",
+        "src/pagination.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.1,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 70.91,
+        "tokens_used": 3899,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/distance.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 48.58,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/distance.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 58.737,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/distance.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 48.535,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py",
+        "src/sanitize.py",
+        "notes/unrelated_11.md",
+        "notes/accessibility.md",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.6,
+          "lexical_coverage": 0.09090909090909091,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 72.493,
+        "tokens_used": 3770,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py",
+        "src/sanitize.py",
+        "notes/unrelated_11.md",
+        "notes/accessibility.md",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.6,
+          "lexical_coverage": 0.09090909090909091,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 72.693,
+        "tokens_used": 3770,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-distance-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/distance.py",
+        "src/pagination.py",
+        "src/stream.py",
+        "src/sanitize.py",
+        "notes/unrelated_11.md",
+        "notes/accessibility.md",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.6,
+          "lexical_coverage": 0.09090909090909091,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 81.602,
+        "tokens_used": 3770,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 54.808,
+        "tokens_used": 521,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 52.916,
+        "tokens_used": 521,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 46.336,
+        "tokens_used": 521,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/memo.py",
+        "src/billing.py",
+        "src/csv.py",
+        "src/backoff.py",
+        "src/stream.py",
+        "src/distance.py",
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 64.591,
+        "tokens_used": 3784,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/memo.py",
+        "src/billing.py",
+        "src/csv.py",
+        "src/backoff.py",
+        "src/stream.py",
+        "src/distance.py",
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 63.633,
+        "tokens_used": 3784,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-memo-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/memo.py",
+        "src/billing.py",
+        "src/csv.py",
+        "src/backoff.py",
+        "src/stream.py",
+        "src/distance.py",
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.121,
+        "tokens_used": 3784,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/backup.md",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 19.276,
+        "elapsed_ms": 88.278,
+        "tokens_used": 1049,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/backup.md",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 18.672,
+        "elapsed_ms": 91.476,
+        "tokens_used": 1049,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/backup.md",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 12.782,
+        "elapsed_ms": 85.065,
+        "tokens_used": 1049,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/restore.md",
+        "src/checksum.py",
+        "src/memo.py",
+        "src/atomic.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 0.2,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 116.658,
+        "tokens_used": 3838,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/restore.md",
+        "src/checksum.py",
+        "src/memo.py",
+        "src/atomic.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 0.2,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 131.331,
+        "tokens_used": 3838,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-backup-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/restore.md",
+        "src/checksum.py",
+        "src/memo.py",
+        "src/atomic.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 0.2,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.302,
+        "tokens_used": 3838,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/accessibility.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 31.341,
+        "elapsed_ms": 95.05,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/accessibility.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 11.907,
+        "elapsed_ms": 62.06,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/accessibility.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 17.696,
+        "elapsed_ms": 89.189,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/memo.py",
+        "notes/keys.md",
+        "notes/offline.md",
+        "notes/unrelated_04.md",
+        "notes/unrelated_11.md",
+        "notes/unrelated_08.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 128.879,
+        "tokens_used": 4029,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/memo.py",
+        "notes/keys.md",
+        "notes/offline.md",
+        "notes/unrelated_04.md",
+        "notes/unrelated_11.md",
+        "notes/unrelated_08.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.883,
+        "tokens_used": 4029,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-accessibility-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/memo.py",
+        "notes/keys.md",
+        "notes/offline.md",
+        "notes/unrelated_04.md",
+        "notes/unrelated_11.md",
+        "notes/unrelated_08.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 122.084,
+        "tokens_used": 4029,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/incident.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.868,
+        "elapsed_ms": 118.066,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/incident.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 13.946,
+        "elapsed_ms": 73.193,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/incident.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 14.495,
+        "elapsed_ms": 73.919,
+        "tokens_used": 510,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/offline.md",
+        "notes/incident.md",
+        "src/queue.py",
+        "src/rate.py",
+        "src/atomic.py",
+        "notes/privacy.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 123.701,
+        "tokens_used": 3810,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/offline.md",
+        "notes/incident.md",
+        "src/queue.py",
+        "src/rate.py",
+        "src/atomic.py",
+        "notes/privacy.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 91.229,
+        "tokens_used": 3810,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-incident-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/offline.md",
+        "notes/incident.md",
+        "src/queue.py",
+        "src/rate.py",
+        "src/atomic.py",
+        "notes/privacy.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 123.412,
+        "tokens_used": 3810,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 21.881,
+        "elapsed_ms": 93.765,
+        "tokens_used": 506,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 16.185,
+        "elapsed_ms": 74.524,
+        "tokens_used": 506,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-exact",
+      "split": "train",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/privacy.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 14.074,
+        "elapsed_ms": 83.797,
+        "tokens_used": 506,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/privacy.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/memo.py",
+        "src/billing.py",
+        "notes/offline.md",
+        "src/queue.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 144.664,
+        "tokens_used": 4068,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/privacy.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/memo.py",
+        "src/billing.py",
+        "notes/offline.md",
+        "src/queue.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 84.053,
+        "tokens_used": 4068,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "train-privacy-intent",
+      "split": "train",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/privacy.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/memo.py",
+        "src/billing.py",
+        "notes/offline.md",
+        "src/queue.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 90.649,
+        "tokens_used": 4068,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/atomic.py",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 95.074,
+        "tokens_used": 1165,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/atomic.py",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 119.07,
+        "tokens_used": 1165,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/atomic.py",
+        "src/csv.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 59.052,
+        "tokens_used": 1165,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 14,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/atomic.py",
+        "notes/unrelated_05.md",
+        "notes/unrelated_03.md",
+        "notes/unrelated_08.md",
+        "src/pagination.py",
+        "notes/unrelated_00.md",
+        "notes/unrelated_02.md",
+        "notes/unrelated_04.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 27,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 19.738,
+        "elapsed_ms": 80.034,
+        "tokens_used": 4093,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 27,
+        "semantic_coverage": 0.75,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/atomic.py",
+        "notes/unrelated_05.md",
+        "notes/unrelated_03.md",
+        "notes/unrelated_08.md",
+        "src/pagination.py",
+        "notes/unrelated_00.md",
+        "notes/unrelated_02.md",
+        "notes/unrelated_04.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 27,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 20.516,
+        "elapsed_ms": 90.814,
+        "tokens_used": 4093,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 27,
+        "semantic_coverage": 0.75,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-atomic-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/atomic.py",
+        "notes/unrelated_05.md",
+        "notes/unrelated_03.md",
+        "notes/unrelated_08.md",
+        "src/pagination.py",
+        "notes/unrelated_00.md",
+        "notes/unrelated_02.md",
+        "notes/unrelated_04.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 27,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 50.321,
+        "elapsed_ms": 140.0,
+        "tokens_used": 4093,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 27,
+        "semantic_coverage": 0.75,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/expiry.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 76.172,
+        "tokens_used": 484,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/expiry.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 87.885,
+        "tokens_used": 484,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/expiry.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 98.415,
+        "tokens_used": 484,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/memo.py",
+        "src/expiry.py",
+        "src/auth.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/restore.md",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.3,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 30,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 40.04,
+        "elapsed_ms": 123.26,
+        "tokens_used": 4064,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 30,
+        "semantic_coverage": 0.8333333333333334,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/memo.py",
+        "src/expiry.py",
+        "src/auth.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/restore.md",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.3,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 30,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 22.021,
+        "elapsed_ms": 103.337,
+        "tokens_used": 4064,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 30,
+        "semantic_coverage": 0.8333333333333334,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-expiry-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/memo.py",
+        "src/expiry.py",
+        "src/auth.py",
+        "notes/backup.md",
+        "notes/offline.md",
+        "notes/restore.md",
+        "notes/privacy.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.3,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 30,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 21.473,
+        "elapsed_ms": 96.471,
+        "tokens_used": 4064,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 30,
+        "semantic_coverage": 0.8333333333333334,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 68.577,
+        "tokens_used": 562,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 70.867,
+        "tokens_used": 562,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/rate.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 77.043,
+        "tokens_used": 562,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "notes/offline.md",
+        "notes/backup.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 105.612,
+        "tokens_used": 4058,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "notes/offline.md",
+        "notes/backup.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 118.131,
+        "tokens_used": 4058,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-rate-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/backoff.py",
+        "src/rate.py",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "notes/offline.md",
+        "notes/backup.md",
+        "src/billing.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.14285714285714285,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 140.481,
+        "tokens_used": 4058,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 57.308,
+        "tokens_used": 621,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 88.853,
+        "tokens_used": 621,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/sanitize.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 130.04,
+        "tokens_used": 621,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/sanitize.py",
+        "src/checksum.py",
+        "notes/privacy.md",
+        "src/auth.py",
+        "src/atomic.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 113.847,
+        "tokens_used": 3924,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/sanitize.py",
+        "src/checksum.py",
+        "notes/privacy.md",
+        "src/auth.py",
+        "src/atomic.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 100.31,
+        "tokens_used": 3924,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-sanitize-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/sanitize.py",
+        "src/checksum.py",
+        "notes/privacy.md",
+        "src/auth.py",
+        "src/atomic.py",
+        "src/pagination.py",
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.125,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 102.339,
+        "tokens_used": 3924,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/topology.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 69.933,
+        "tokens_used": 575,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/topology.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 52.119,
+        "tokens_used": 575,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/topology.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 53.13,
+        "tokens_used": 575,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/topology.py",
+        "src/queue.py",
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/dedup.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 88.05,
+        "tokens_used": 4081,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/topology.py",
+        "src/queue.py",
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/dedup.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 89.418,
+        "tokens_used": 4081,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-topology-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/topology.py",
+        "src/queue.py",
+        "notes/accessibility.md",
+        "src/pagination.py",
+        "src/dedup.py",
+        "notes/privacy.md",
+        "src/stream.py",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.92,
+        "tokens_used": 4081,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/dedup.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 81.393,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/dedup.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 57.111,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/dedup.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 91.386,
+        "tokens_used": 497,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/privacy.md",
+        "notes/incident.md",
+        "src/auth.py",
+        "src/backoff.py",
+        "src/sanitize.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 10,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 19.124,
+        "elapsed_ms": 124.173,
+        "tokens_used": 4086,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 10,
+        "semantic_coverage": 0.2777777777777778,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/privacy.md",
+        "notes/incident.md",
+        "src/auth.py",
+        "src/backoff.py",
+        "src/sanitize.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 10,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 17.286,
+        "elapsed_ms": 69.431,
+        "tokens_used": 4086,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 10,
+        "semantic_coverage": 0.2777777777777778,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-dedup-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/dedup.py",
+        "src/stream.py",
+        "notes/privacy.md",
+        "notes/incident.md",
+        "src/auth.py",
+        "src/backoff.py",
+        "src/sanitize.py",
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.45,
+          "lexical_coverage": 0.375,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 10,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 21.854,
+        "elapsed_ms": 67.576,
+        "tokens_used": 4086,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 10,
+        "semantic_coverage": 0.2777777777777778,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 52.096,
+        "tokens_used": 559,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 52.298,
+        "tokens_used": 559,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/stream.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 58.848,
+        "tokens_used": 559,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/stream.py",
+        "src/memo.py",
+        "src/rate.py",
+        "notes/privacy.md",
+        "src/queue.py",
+        "src/pagination.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 74.955,
+        "tokens_used": 3787,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/stream.py",
+        "src/memo.py",
+        "src/rate.py",
+        "notes/privacy.md",
+        "src/queue.py",
+        "src/pagination.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 83.723,
+        "tokens_used": 3787,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-stream-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/stream.py",
+        "src/memo.py",
+        "src/rate.py",
+        "notes/privacy.md",
+        "src/queue.py",
+        "src/pagination.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.4,
+          "lexical_coverage": 0.25,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 84.743,
+        "tokens_used": 3787,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 60.234,
+        "tokens_used": 548,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 62.787,
+        "tokens_used": 548,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "lexical",
+        "reason": "exact identifier with lexical evidence",
+        "depth": 18,
+        "features": {
+          "identifier": 1.0,
+          "query_length": 0.05,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "elapsed_ms": 53.848,
+        "tokens_used": 548,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 0,
+      "paths": [
+        "src/expiry.py",
+        "src/checksum.py",
+        "src/atomic.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "notes/backup.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.65,
+          "lexical_coverage": 0.08333333333333333,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 93.725,
+        "tokens_used": 3818,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 1,
+      "paths": [
+        "src/expiry.py",
+        "src/checksum.py",
+        "src/atomic.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "notes/backup.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.65,
+          "lexical_coverage": 0.08333333333333333,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 109.805,
+        "tokens_used": 3818,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-checksum-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "code",
+      "repeat": 2,
+      "paths": [
+        "src/expiry.py",
+        "src/checksum.py",
+        "src/atomic.py",
+        "notes/release.md",
+        "notes/restore.md",
+        "notes/backup.md",
+        "src/memo.py"
+      ],
+      "reciprocal_rank": 0.5,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.65,
+          "lexical_coverage": 0.08333333333333333,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 136.674,
+        "tokens_used": 3818,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/keys.md",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.624,
+        "elapsed_ms": 80.812,
+        "tokens_used": 1047,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/keys.md",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 28.008,
+        "elapsed_ms": 155.294,
+        "tokens_used": 1047,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/keys.md",
+        "notes/backup.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.15,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 3,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.485,
+        "elapsed_ms": 111.787,
+        "tokens_used": 1047,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 3,
+        "semantic_coverage": 0.08333333333333333,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/keys.md",
+        "src/atomic.py",
+        "src/memo.py",
+        "notes/release.md",
+        "src/csv.py",
+        "src/distance.py",
+        "src/auth.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.42857142857142855,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 29,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 24.225,
+        "elapsed_ms": 112.382,
+        "tokens_used": 3858,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 29,
+        "semantic_coverage": 0.8055555555555556,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/keys.md",
+        "src/atomic.py",
+        "src/memo.py",
+        "notes/release.md",
+        "src/csv.py",
+        "src/distance.py",
+        "src/auth.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.42857142857142855,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 29,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 45.196,
+        "elapsed_ms": 125.528,
+        "tokens_used": 3858,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 29,
+        "semantic_coverage": 0.8055555555555556,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-keys-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/keys.md",
+        "src/atomic.py",
+        "src/memo.py",
+        "notes/release.md",
+        "src/csv.py",
+        "src/distance.py",
+        "src/auth.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.35,
+          "lexical_coverage": 0.42857142857142855,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 29,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 29.096,
+        "elapsed_ms": 116.573,
+        "tokens_used": 3858,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 29,
+        "semantic_coverage": 0.8055555555555556,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 16.349,
+        "elapsed_ms": 89.861,
+        "tokens_used": 529,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 12.726,
+        "elapsed_ms": 109.33,
+        "tokens_used": 529,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/restore.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 30.636,
+        "elapsed_ms": 120.481,
+        "tokens_used": 529,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/restore.md",
+        "notes/offline.md",
+        "src/memo.py",
+        "notes/backup.md",
+        "notes/privacy.md",
+        "notes/release.md",
+        "src/rate.py",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 147.022,
+        "tokens_used": 4085,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/restore.md",
+        "notes/offline.md",
+        "src/memo.py",
+        "notes/backup.md",
+        "notes/privacy.md",
+        "notes/release.md",
+        "src/rate.py",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 89.272,
+        "tokens_used": 4085,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-restore-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/restore.md",
+        "notes/offline.md",
+        "src/memo.py",
+        "notes/backup.md",
+        "notes/privacy.md",
+        "notes/release.md",
+        "src/rate.py",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 113.654,
+        "tokens_used": 4085,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/offline.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.452,
+        "elapsed_ms": 91.361,
+        "tokens_used": 541,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/offline.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.763,
+        "elapsed_ms": 79.723,
+        "tokens_used": 541,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/offline.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 1.0,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 1,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 17.832,
+        "elapsed_ms": 82.78,
+        "tokens_used": 541,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 1,
+        "semantic_coverage": 0.027777777777777776,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/offline.md",
+        "src/rate.py",
+        "src/backoff.py",
+        "notes/backup.md",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/memo.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 93.388,
+        "tokens_used": 4025,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/offline.md",
+        "src/rate.py",
+        "src/backoff.py",
+        "notes/backup.md",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/memo.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 78.686,
+        "tokens_used": 4025,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-offline-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/offline.md",
+        "src/rate.py",
+        "src/backoff.py",
+        "notes/backup.md",
+        "src/queue.py",
+        "notes/privacy.md",
+        "src/memo.py",
+        "src/atomic.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.125,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.5,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 87.47,
+        "tokens_used": 4025,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 2,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 15.261,
+        "elapsed_ms": 79.068,
+        "tokens_used": 1063,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.05555555555555555,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 2,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 23.138,
+        "elapsed_ms": 77.973,
+        "tokens_used": 1063,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.05555555555555555,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-exact",
+      "split": "test",
+      "query_type": "exact",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.5,
+      "plan": {
+        "strategy": "hybrid",
+        "reason": "lexical candidates benefit from local semantic reranking",
+        "depth": 18,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.1,
+          "lexical_coverage": 1.0,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 0.29296875
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 1200,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 2,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_ms": 21.81,
+        "elapsed_ms": 97.442,
+        "tokens_used": 1063,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 2,
+        "semantic_coverage": 0.05555555555555555,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 0,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/auth.py",
+        "src/topology.py",
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.55,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 107.307,
+        "tokens_used": 3831,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 1,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/auth.py",
+        "src/topology.py",
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.55,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 108.105,
+        "tokens_used": 3831,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    },
+    {
+      "query_id": "test-release-intent",
+      "split": "test",
+      "query_type": "intent",
+      "kind": "doc",
+      "repeat": 2,
+      "paths": [
+        "notes/release.md",
+        "notes/keys.md",
+        "src/rate.py",
+        "notes/backup.md",
+        "src/auth.py",
+        "src/topology.py",
+        "src/checksum.py"
+      ],
+      "reciprocal_rank": 1.0,
+      "recall_at_8": 1.0,
+      "precision_returned": 0.14285714285714285,
+      "plan": {
+        "strategy": "semantic",
+        "reason": "low lexical overlap; spend compute on semantic evidence",
+        "depth": 36,
+        "features": {
+          "identifier": 0.0,
+          "query_length": 0.55,
+          "lexical_coverage": 0.2,
+          "cache_coverage": 1.0,
+          "latency": 1.0,
+          "token_budget": 1.0
+        },
+        "latency_target_ms": 1000,
+        "working_memory_kib": 2048,
+        "token_budget": 4096,
+        "policy": "heuristic"
+      },
+      "metrics": {
+        "cache_hits": 36,
+        "cache_misses": 0,
+        "cache_evictions": 0,
+        "dense_scanned": 36,
+        "elapsed_ms": 85.432,
+        "tokens_used": 3831,
+        "token_accounting": "UTF-8 bytes: conservative token upper bound",
+        "candidates_scored": 36,
+        "semantic_coverage": 1.0,
+        "latency_target_exceeded": false
+      }
+    }
+  ],
+  "stats": {
+    "files": 36,
+    "chunks": 36,
+    "cached_vectors": 36,
+    "cache_bytes": 13968,
+    "index_bytes": 94208,
+    "cache_budget_bytes": 8388608,
+    "embedding_backend": "injected",
+    "revision": null,
+    "model_bytes": 0,
+    "index_bytes_before_compact": 94208,
+    "index_bytes_after_compact": 94208
+  },
+  "startup_and_lexical_index_ms": 1186.027,
+  "materialize_ms": 1418.054,
+  "initial_scan": {
+    "changed": 36,
+    "removed": 0,
+    "skipped": 0,
+    "files": 36,
+    "elapsed_ms": 60.267
+  },
+  "process_peak_rss_bytes": 235683840,
+  "source_sha256": {
+    "src/ravel/engine.py": "9ca96518b3e3d8a8777d583d7df3426d4349662f4f8d7b202ee1eb176b9e080d",
+    "src/ravel/planner.py": "6db4192b7a02467499372996c04e58795ce58be61d11a0fb9baa13ca9e30b7e8",
+    "src/ravel/embeddings.py": "161cfabd5e5c10e1ca2626a300a69e52686334f46b6f01549e30de776bbe7e9f",
+    "src/ravel/sources.py": "a89594b5863be1fb65389eb9245c5e843c08e2655165840c8a9e21f87909a627"
+  },
+  "process_cpu_seconds": 10.109
+}

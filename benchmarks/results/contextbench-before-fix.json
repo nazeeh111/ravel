@@ -1,0 +1,1276 @@
+{
+  "scope": "one predeclared ContextBench test task, static file-retrieval diagnostic; not official agent/line-level scoring or a leaderboard result",
+  "selection": "first xarray test-set task; chosen before running retrieval to bound source download and compute",
+  "dataset": "Contextbench/ContextBench data/test.parquet",
+  "metadata_sha256": "42142b51e0fb5a25f227541e80ad659ed522b094f35969c03830b5d8f25af3dc",
+  "instance_id": "SWE-Bench-Verified__python__maintenance__bugfix__90532e38",
+  "original_inst_id": "pydata__xarray-4075",
+  "repo": "pydata/xarray",
+  "base_commit": "19b088636eb7d3f65ab7a1046ac672e0689371d8",
+  "snapshot_url": "https://codeload.github.com/pydata/xarray/tar.gz/19b088636eb7d3f65ab7a1046ac672e0689371d8",
+  "query_sha256": "d1cc08eec285573fc56f2a58a623e0b7adf33e6f75fd16b4214dd1db4b3e46a6",
+  "query_characters": 2273,
+  "gold_paths": [
+    "xarray/core/weighted.py",
+    "xarray/tests/test_weighted.py"
+  ],
+  "results": [
+    {
+      "mode": "lexical",
+      "initial_sync": {
+        "changed": 204,
+        "removed": 0,
+        "skipped": 0,
+        "files": 204,
+        "elapsed_ms": 38158.448
+      },
+      "stats": {
+        "files": 204,
+        "chunks": 5555,
+        "cached_vectors": 0,
+        "cache_bytes": 0,
+        "index_bytes": 11161600,
+        "cache_budget_bytes": 8388608,
+        "embedding_backend": "injected",
+        "revision": null,
+        "model_bytes": 0
+      },
+      "rows": [
+        {
+          "repeat": 0,
+          "paths": [
+            "doc/contributing.rst",
+            "doc/computation.rst",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/computation.rst",
+            "xarray/core/weighted.py",
+            "doc/whats-new.rst",
+            "xarray/core/weighted.py",
+            "doc/contributing.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.2,
+          "file_recall_returned": 1.0,
+          "delivered_spans": [
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 281,
+              "end_line": 350,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 137,
+              "end_line": 150,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3361,
+              "end_line": 3430,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 162,
+              "end_line": 174,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 771,
+              "end_line": 840,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3851,
+              "end_line": 3876,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "lexical",
+            "reason": "explicit strategy",
+            "depth": 256,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 0,
+            "cache_misses": 0,
+            "cache_evictions": 0,
+            "elapsed_ms": 5715.408,
+            "tokens_used": 31949,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 256,
+            "semantic_coverage": 0.0,
+            "latency_target_exceeded": true
+          }
+        },
+        {
+          "repeat": 1,
+          "paths": [
+            "doc/contributing.rst",
+            "doc/computation.rst",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/computation.rst",
+            "xarray/core/weighted.py",
+            "doc/whats-new.rst",
+            "xarray/core/weighted.py",
+            "doc/contributing.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.2,
+          "file_recall_returned": 1.0,
+          "delivered_spans": [
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 281,
+              "end_line": 350,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 137,
+              "end_line": 150,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3361,
+              "end_line": 3430,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 162,
+              "end_line": 174,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 771,
+              "end_line": 840,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3851,
+              "end_line": 3876,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "lexical",
+            "reason": "explicit strategy",
+            "depth": 256,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 0,
+            "cache_misses": 0,
+            "cache_evictions": 0,
+            "elapsed_ms": 6287.068,
+            "tokens_used": 31949,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 256,
+            "semantic_coverage": 0.0,
+            "latency_target_exceeded": true
+          }
+        },
+        {
+          "repeat": 2,
+          "paths": [
+            "doc/contributing.rst",
+            "doc/computation.rst",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/computation.rst",
+            "xarray/core/weighted.py",
+            "doc/whats-new.rst",
+            "xarray/core/weighted.py",
+            "doc/contributing.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.2,
+          "file_recall_returned": 1.0,
+          "delivered_spans": [
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 281,
+              "end_line": 350,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 137,
+              "end_line": 150,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3361,
+              "end_line": 3430,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 162,
+              "end_line": 174,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 771,
+              "end_line": 840,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3851,
+              "end_line": 3876,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "lexical",
+            "reason": "explicit strategy",
+            "depth": 256,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 0,
+            "cache_misses": 0,
+            "cache_evictions": 0,
+            "elapsed_ms": 4947.994,
+            "tokens_used": 31949,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 256,
+            "semantic_coverage": 0.0,
+            "latency_target_exceeded": true
+          }
+        }
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "initial_sync": {
+        "changed": 204,
+        "removed": 0,
+        "skipped": 0,
+        "files": 204,
+        "elapsed_ms": 15047.431
+      },
+      "stats": {
+        "files": 204,
+        "chunks": 5555,
+        "cached_vectors": 11,
+        "cache_bytes": 4268,
+        "index_bytes": 11169792,
+        "cache_budget_bytes": 8388608,
+        "embedding_backend": "injected",
+        "revision": null,
+        "model_bytes": 0
+      },
+      "rows": [
+        {
+          "repeat": 0,
+          "paths": [
+            "doc/computation.rst",
+            "doc/contributing.rst",
+            "doc/whats-new.rst",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/computation.rst",
+            "xarray/core/weighted.py",
+            "doc/whats-new.rst",
+            "xarray/core/weighted.py",
+            "doc/contributing.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.2,
+          "file_recall_returned": 1.0,
+          "delivered_spans": [
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 281,
+              "end_line": 350,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 137,
+              "end_line": 150,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3361,
+              "end_line": 3430,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 162,
+              "end_line": 174,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 771,
+              "end_line": 840,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3851,
+              "end_line": 3876,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "hybrid",
+            "reason": "explicit strategy",
+            "depth": 250,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 0,
+            "cache_misses": 5,
+            "cache_evictions": 0,
+            "dense_ms": 3176.51,
+            "elapsed_ms": 4244.768,
+            "tokens_used": 31989,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 250,
+            "semantic_coverage": 0.0009000900090009,
+            "latency_target_exceeded": true
+          }
+        },
+        {
+          "repeat": 1,
+          "paths": [
+            "doc/computation.rst",
+            "doc/contributing.rst",
+            "doc/whats-new.rst",
+            "xarray/tests/test_weighted.py",
+            "xarray/tests/test_weighted.py",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.25,
+          "file_recall_returned": 0.5,
+          "delivered_spans": [
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "hybrid",
+            "reason": "explicit strategy",
+            "depth": 8,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0009000900090009,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 5,
+            "cache_misses": 3,
+            "cache_evictions": 0,
+            "dense_ms": 941.321,
+            "elapsed_ms": 1528.707,
+            "tokens_used": 21102,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 8,
+            "semantic_coverage": 0.00144014401440144,
+            "latency_target_exceeded": false
+          }
+        },
+        {
+          "repeat": 2,
+          "paths": [
+            "doc/computation.rst",
+            "doc/computation.rst",
+            "xarray/tests/test_weighted.py",
+            "doc/whats-new.rst",
+            "doc/contributing.rst",
+            "xarray/tests/test_weighted.py",
+            "xarray/core/weighted.py",
+            "CODE_OF_CONDUCT.md",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst",
+            "doc/whats-new.rst"
+          ],
+          "reciprocal_rank": 0.5,
+          "file_recall_returned": 1.0,
+          "delivered_spans": [
+            {
+              "path": "doc/computation.rst",
+              "start_line": 211,
+              "end_line": 280,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 281,
+              "end_line": 350,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 110,
+              "end_line": 125,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3781,
+              "end_line": 3850,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "xarray/tests/test_weighted.py",
+              "start_line": 161,
+              "end_line": 183,
+              "sha256": "a15bd3c2a3b50c99833b40684e890d530c6a2e2fff3cbd6bb374ca1606d6424a"
+            },
+            {
+              "path": "xarray/core/weighted.py",
+              "start_line": 137,
+              "end_line": 150,
+              "sha256": "24a8f70e2ad99ab791b157f4bea8f76ee75c02253531fe3f05eed9d57f332985"
+            },
+            {
+              "path": "CODE_OF_CONDUCT.md",
+              "start_line": 1,
+              "end_line": 46,
+              "sha256": "0d75f0d095c297ffc2325c6a7c473e8bef91285e306f831d526bd83433a9ed38"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4271,
+              "end_line": 4340,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 4411,
+              "end_line": 4480,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            },
+            {
+              "path": "doc/whats-new.rst",
+              "start_line": 3361,
+              "end_line": 3430,
+              "sha256": "3b47139e346e38e8b2dc10a50e53e1d1dd396c8eff9d646a2577343433b06176"
+            }
+          ],
+          "plan": {
+            "strategy": "hybrid",
+            "reason": "explicit strategy",
+            "depth": 11,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.00144014401440144,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 8,
+            "cache_misses": 3,
+            "cache_evictions": 0,
+            "dense_ms": 2638.748,
+            "elapsed_ms": 4254.364,
+            "tokens_used": 27188,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 11,
+            "semantic_coverage": 0.0019801980198019802,
+            "latency_target_exceeded": true
+          }
+        }
+      ]
+    },
+    {
+      "mode": "auto",
+      "initial_sync": {
+        "changed": 204,
+        "removed": 0,
+        "skipped": 0,
+        "files": 204,
+        "elapsed_ms": 5832.455
+      },
+      "stats": {
+        "files": 204,
+        "chunks": 5555,
+        "cached_vectors": 35,
+        "cache_bytes": 13580,
+        "index_bytes": 11177984,
+        "cache_budget_bytes": 8388608,
+        "embedding_backend": "injected",
+        "revision": null,
+        "model_bytes": 0
+      },
+      "rows": [
+        {
+          "repeat": 0,
+          "paths": [
+            "doc/computation.rst",
+            "doc/indexing.rst",
+            "doc/contributing.rst",
+            "doc/api.rst",
+            "ci/requirements/py36-bare-minimum.yml",
+            "doc/interpolation.rst",
+            "asv_bench/benchmarks/dataset_io.py",
+            "asv_bench/benchmarks/rolling.py",
+            "asv_bench/benchmarks/dataset_io.py",
+            "doc/_static/dataset-diagram-square-logo.tex",
+            "asv_bench/benchmarks/interp.py",
+            "asv_bench/benchmarks/indexing.py",
+            "asv_bench/benchmarks/dataset_io.py",
+            "asv_bench/benchmarks/__init__.py",
+            "doc/examples/_code/accessor_example.py"
+          ],
+          "reciprocal_rank": 0,
+          "file_recall_returned": 0.0,
+          "delivered_spans": [
+            {
+              "path": "doc/computation.rst",
+              "start_line": 421,
+              "end_line": 490,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/indexing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "678ab47c9486bf3740bddfe03913ec01b73815fc6e38d4226048a53169495d4a"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 841,
+              "end_line": 853,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/api.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "aef3e72fc0acd6fda23e5b9da1792e0882ab77fa3bbe51f529f016cb67cacb43"
+            },
+            {
+              "path": "ci/requirements/py36-bare-minimum.yml",
+              "start_line": 1,
+              "end_line": 13,
+              "sha256": "52fecaa12b15c6f6f98f5674f58f3e3646c384ef361da930cd13974cbc3d4bc4"
+            },
+            {
+              "path": "doc/interpolation.rst",
+              "start_line": 281,
+              "end_line": 320,
+              "sha256": "7736b34653b14fd8b5b34e74d6311a869cf847acea8c91933ab66499ce062bc6"
+            },
+            {
+              "path": "asv_bench/benchmarks/dataset_io.py",
+              "start_line": 211,
+              "end_line": 213,
+              "sha256": "70e84ffbedfa9cf7d752dc6c8ba1103bf215ae81d01251eb1b557c3232a04ed9"
+            },
+            {
+              "path": "asv_bench/benchmarks/rolling.py",
+              "start_line": 65,
+              "end_line": 69,
+              "sha256": "25feea66604bdbf0d16a9ce48a08142f166b2a4f59261f987ed7cb8e08b56f1d"
+            },
+            {
+              "path": "asv_bench/benchmarks/dataset_io.py",
+              "start_line": 378,
+              "end_line": 381,
+              "sha256": "70e84ffbedfa9cf7d752dc6c8ba1103bf215ae81d01251eb1b557c3232a04ed9"
+            },
+            {
+              "path": "doc/_static/dataset-diagram-square-logo.tex",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "81b6177de8e2838018ec484cc0bd46814774bca5608538d6ef068282cc1316a1"
+            },
+            {
+              "path": "asv_bench/benchmarks/interp.py",
+              "start_line": 46,
+              "end_line": 48,
+              "sha256": "fa2b763b79f03233d6f8b2d44b682d17ef6bfb54c3d76f79849d200aade7ebb9"
+            },
+            {
+              "path": "asv_bench/benchmarks/indexing.py",
+              "start_line": 78,
+              "end_line": 79,
+              "sha256": "8fe3dfacfec195aa937f4c953edbfca21993ada7dc45cc2958cb819e8e8da3ac"
+            },
+            {
+              "path": "asv_bench/benchmarks/dataset_io.py",
+              "start_line": 104,
+              "end_line": 105,
+              "sha256": "70e84ffbedfa9cf7d752dc6c8ba1103bf215ae81d01251eb1b557c3232a04ed9"
+            },
+            {
+              "path": "asv_bench/benchmarks/__init__.py",
+              "start_line": 17,
+              "end_line": 21,
+              "sha256": "3b23a66725ccdcc4e607aea0af78f7d16a261dac5c8538e21c12d78ab54ba88b"
+            },
+            {
+              "path": "doc/examples/_code/accessor_example.py",
+              "start_line": 10,
+              "end_line": 19,
+              "sha256": "14fab29087ef706f85d2184e2247719cf35dbc18ce1a758a4163308cc90cf467"
+            }
+          ],
+          "plan": {
+            "strategy": "semantic",
+            "reason": "low lexical overlap; spend compute on semantic evidence",
+            "depth": 250,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 0,
+            "cache_misses": 15,
+            "cache_evictions": 0,
+            "dense_scanned": 15,
+            "elapsed_ms": 4024.591,
+            "tokens_used": 20952,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 15,
+            "semantic_coverage": 0.0027002700270027003,
+            "latency_target_exceeded": true
+          }
+        },
+        {
+          "repeat": 1,
+          "paths": [
+            "xarray/core/dataset.py",
+            "doc/computation.rst",
+            "doc/indexing.rst",
+            "xarray/tests/test_backends.py",
+            "xarray/tests/test_dataarray.py",
+            "doc/contributing.rst",
+            "doc/api.rst",
+            "ci/requirements/py36-bare-minimum.yml",
+            "xarray/core/rolling.py",
+            "doc/interpolation.rst"
+          ],
+          "reciprocal_rank": 0,
+          "file_recall_returned": 0.0,
+          "delivered_spans": [
+            {
+              "path": "xarray/core/dataset.py",
+              "start_line": 5847,
+              "end_line": 5916,
+              "sha256": "bbbf8cd6f7be4ed785bb5b4248c73c373c823b471c99b9086d3560f1ef8c55e6"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 421,
+              "end_line": 490,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/indexing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "678ab47c9486bf3740bddfe03913ec01b73815fc6e38d4226048a53169495d4a"
+            },
+            {
+              "path": "xarray/tests/test_backends.py",
+              "start_line": 999,
+              "end_line": 1004,
+              "sha256": "855ef933d96b90a4e29e83cfaaf6075f1212c5e2f489ae6aeeb21413b4418e27"
+            },
+            {
+              "path": "xarray/tests/test_dataarray.py",
+              "start_line": 3486,
+              "end_line": 3497,
+              "sha256": "eece0129dccb291186c6527e46c51457dd74987e4fd4cbabf5f18a06e996c749"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 841,
+              "end_line": 853,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/api.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "aef3e72fc0acd6fda23e5b9da1792e0882ab77fa3bbe51f529f016cb67cacb43"
+            },
+            {
+              "path": "ci/requirements/py36-bare-minimum.yml",
+              "start_line": 1,
+              "end_line": 13,
+              "sha256": "52fecaa12b15c6f6f98f5674f58f3e3646c384ef361da930cd13974cbc3d4bc4"
+            },
+            {
+              "path": "xarray/core/rolling.py",
+              "start_line": 482,
+              "end_line": 492,
+              "sha256": "621a2ee05343c14fa6732661e06a7404503a210f9978d108c59ee4d54bbcc14e"
+            },
+            {
+              "path": "doc/interpolation.rst",
+              "start_line": 281,
+              "end_line": 320,
+              "sha256": "7736b34653b14fd8b5b34e74d6311a869cf847acea8c91933ab66499ce062bc6"
+            }
+          ],
+          "plan": {
+            "strategy": "semantic",
+            "reason": "low lexical overlap; spend compute on semantic evidence",
+            "depth": 10,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.0027002700270027003,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 15,
+            "cache_misses": 10,
+            "cache_evictions": 0,
+            "dense_scanned": 25,
+            "elapsed_ms": 2197.937,
+            "tokens_used": 17975,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 10,
+            "semantic_coverage": 0.004500450045004501,
+            "latency_target_exceeded": false
+          }
+        },
+        {
+          "repeat": 2,
+          "paths": [
+            "xarray/core/dataset.py",
+            "doc/computation.rst",
+            "doc/indexing.rst",
+            "doc/contributing.rst",
+            "xarray/tests/test_backends.py",
+            "xarray/tests/test_dataarray.py",
+            "doc/contributing.rst",
+            "doc/api.rst",
+            "xarray/core/dataset.py",
+            "ci/requirements/py36-bare-minimum.yml",
+            "xarray/core/rolling.py",
+            "doc/interpolation.rst",
+            "xarray/core/groupby.py",
+            "xarray/coding/strings.py",
+            "xarray/core/missing.py",
+            "asv_bench/benchmarks/dataset_io.py",
+            "xarray/tests/test_units.py",
+            "xarray/core/dataarray.py",
+            "asv_bench/benchmarks/rolling.py",
+            "asv_bench/benchmarks/dataset_io.py"
+          ],
+          "reciprocal_rank": 0,
+          "file_recall_returned": 0.0,
+          "delivered_spans": [
+            {
+              "path": "xarray/core/dataset.py",
+              "start_line": 5847,
+              "end_line": 5916,
+              "sha256": "bbbf8cd6f7be4ed785bb5b4248c73c373c823b471c99b9086d3560f1ef8c55e6"
+            },
+            {
+              "path": "doc/computation.rst",
+              "start_line": 421,
+              "end_line": 490,
+              "sha256": "a5d06650dc8aa285ce980f7df448ba40a57d467d5a15634906e92445d73974e3"
+            },
+            {
+              "path": "doc/indexing.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "678ab47c9486bf3740bddfe03913ec01b73815fc6e38d4226048a53169495d4a"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 421,
+              "end_line": 490,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "xarray/tests/test_backends.py",
+              "start_line": 999,
+              "end_line": 1004,
+              "sha256": "855ef933d96b90a4e29e83cfaaf6075f1212c5e2f489ae6aeeb21413b4418e27"
+            },
+            {
+              "path": "xarray/tests/test_dataarray.py",
+              "start_line": 3486,
+              "end_line": 3497,
+              "sha256": "eece0129dccb291186c6527e46c51457dd74987e4fd4cbabf5f18a06e996c749"
+            },
+            {
+              "path": "doc/contributing.rst",
+              "start_line": 841,
+              "end_line": 853,
+              "sha256": "45ddcc693bd67d9d99d4168ffa71feccc70dbcaf794e400d770e2b5e7d3a6ccc"
+            },
+            {
+              "path": "doc/api.rst",
+              "start_line": 1,
+              "end_line": 70,
+              "sha256": "aef3e72fc0acd6fda23e5b9da1792e0882ab77fa3bbe51f529f016cb67cacb43"
+            },
+            {
+              "path": "xarray/core/dataset.py",
+              "start_line": 2520,
+              "end_line": 2552,
+              "sha256": "bbbf8cd6f7be4ed785bb5b4248c73c373c823b471c99b9086d3560f1ef8c55e6"
+            },
+            {
+              "path": "ci/requirements/py36-bare-minimum.yml",
+              "start_line": 1,
+              "end_line": 13,
+              "sha256": "52fecaa12b15c6f6f98f5674f58f3e3646c384ef361da930cd13974cbc3d4bc4"
+            },
+            {
+              "path": "xarray/core/rolling.py",
+              "start_line": 482,
+              "end_line": 492,
+              "sha256": "621a2ee05343c14fa6732661e06a7404503a210f9978d108c59ee4d54bbcc14e"
+            },
+            {
+              "path": "doc/interpolation.rst",
+              "start_line": 281,
+              "end_line": 320,
+              "sha256": "7736b34653b14fd8b5b34e74d6311a869cf847acea8c91933ab66499ce062bc6"
+            },
+            {
+              "path": "xarray/core/groupby.py",
+              "start_line": 1,
+              "end_line": 26,
+              "sha256": "4950cf8dbfe1e2ad960ac0f90c54e8b0816dc522b8425655a8d2d3d55d1da15d"
+            },
+            {
+              "path": "xarray/coding/strings.py",
+              "start_line": 155,
+              "end_line": 188,
+              "sha256": "1d4cb61c13599213b56cc9a495c0af5fd5536a89da0101a80561d8a5c2a8efce"
+            },
+            {
+              "path": "xarray/core/missing.py",
+              "start_line": 504,
+              "end_line": 525,
+              "sha256": "8151689f7d5459fe63bc180a0f3ad83db91a820b9f2fdda5bc11ae5b461f8892"
+            },
+            {
+              "path": "asv_bench/benchmarks/dataset_io.py",
+              "start_line": 211,
+              "end_line": 213,
+              "sha256": "70e84ffbedfa9cf7d752dc6c8ba1103bf215ae81d01251eb1b557c3232a04ed9"
+            },
+            {
+              "path": "xarray/tests/test_units.py",
+              "start_line": 47,
+              "end_line": 48,
+              "sha256": "036047fc7c054d6d8e1ac49eda7e1f74a299081126922cae55f6eb8611154b56"
+            },
+            {
+              "path": "xarray/core/dataarray.py",
+              "start_line": 580,
+              "end_line": 584,
+              "sha256": "72d6a801329a0a77558e2a406a12381ff93981d29cc79c6337942c2b011c80e9"
+            },
+            {
+              "path": "asv_bench/benchmarks/rolling.py",
+              "start_line": 65,
+              "end_line": 69,
+              "sha256": "25feea66604bdbf0d16a9ce48a08142f166b2a4f59261f987ed7cb8e08b56f1d"
+            },
+            {
+              "path": "asv_bench/benchmarks/dataset_io.py",
+              "start_line": 378,
+              "end_line": 381,
+              "sha256": "70e84ffbedfa9cf7d752dc6c8ba1103bf215ae81d01251eb1b557c3232a04ed9"
+            }
+          ],
+          "plan": {
+            "strategy": "semantic",
+            "reason": "low lexical overlap; spend compute on semantic evidence",
+            "depth": 23,
+            "features": {
+              "identifier": 1.0,
+              "query_length": 1,
+              "lexical_coverage": 0.2222222222222222,
+              "cache_coverage": 0.004500450045004501,
+              "latency": 1,
+              "token_budget": 1
+            },
+            "latency_target_ms": 3000,
+            "working_memory_kib": 4096,
+            "token_budget": 32000,
+            "policy": "heuristic"
+          },
+          "metrics": {
+            "cache_hits": 25,
+            "cache_misses": 10,
+            "cache_evictions": 0,
+            "dense_scanned": 35,
+            "elapsed_ms": 4325.284,
+            "tokens_used": 29619,
+            "token_accounting": "UTF-8 bytes: conservative token upper bound",
+            "candidates_scored": 23,
+            "semantic_coverage": 0.0063006300630063005,
+            "latency_target_exceeded": true
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "only one task",
+    "eligible text files only, unlike official agent exploring arbitrary files",
+    "no fixes or tests executed",
+    "token packing uses byte upper bound, not official tokenizer",
+    "no patch or gold-context text used as search input",
+    "archive revision supplied externally; result revision remains null without .git",
+    "semantic auto scans partial cold corpus under 3-second soft target"
+  ]
+}
