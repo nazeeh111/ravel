@@ -192,6 +192,4 @@ python -m build
 [Architecture](docs/architecture.md) · [Contributing](CONTRIBUTING.md) ·
 [Independent review](docs/review.md) · [Licenses and attribution](docs/attribution.md)
 
-MIT licensed. Built on SQLite FTS5, Python's AST, pathspec and optional
-FastEmbed/ONNX/BGE. LEANN and other projects informed the research; RAVEL's source,
-branding and inspector are an original implementation.
+MIT licensed.
