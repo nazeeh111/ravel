@@ -193,6 +193,27 @@ def test_cli_mcp_wire(project):
     assert proc.stderr == ''
 
 
+@pytest.mark.parametrize('field', ['token_budget', 'latency_ms', 'memory_kib'])
+def test_mcp_rejects_oversized_integer_without_losing_connection(project, field):
+    messages = [
+        {'jsonrpc': '2.0', 'id': 1, 'method': 'tools/call',
+         'params': {'name': 'ravel_search', 'arguments': {'query': 'retry_operation', field: 10**400}}},
+        {'jsonrpc': '2.0', 'id': 2, 'method': 'ping'},
+        {'jsonrpc': '2.0', 'id': 3, 'method': 'tools/call',
+         'params': {'name': 'ravel_search', 'arguments': {'query': 'retry_operation'}}},
+    ]
+    proc = subprocess.run([sys.executable, '-m', 'ravel', 'mcp', '--root', str(project)],
+                          input='\n'.join(map(json.dumps, messages)) + '\n',
+                          capture_output=True, text=True)
+    assert proc.returncode == 0, proc.stderr
+    responses = list(map(json.loads, proc.stdout.splitlines()))
+    assert [row['id'] for row in responses] == [1, 2, 3]
+    assert responses[0]['result']['isError'] is True
+    assert responses[1]['result'] == {}
+    assert json.loads(responses[2]['result']['content'][0]['text'])['results'][0]['symbol'] == 'retry_operation'
+    assert proc.stderr == ''
+
+
 def test_lowered_quota_persists_for_lexical_search(project):
     with Index(project, embedder=TinyEmbedder(), cache_bytes=100) as idx:
         idx.search('retry', mode='semantic', latency_ms=5000)
