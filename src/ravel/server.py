@@ -56,6 +56,9 @@ def validate_search(args):
 
 
 def mcp(root, **options):
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     with Index(root, **options) as index:
         for raw in sys.stdin:
             id_ = None

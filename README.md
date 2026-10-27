@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/hero.svg" alt="RAVEL. The right context. Almost no overhead." width="100%"></p>
+<p align="center"><img src="docs/assets/hero.svg" alt="RAVEL. The right context. Almost no overhead." width="640"></p>
 
 <p align="center">
   <a href="https://github.com/nazeeh111/RavelIndex/actions/workflows/ci.yml"><img src="https://github.com/nazeeh111/RavelIndex/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
@@ -8,6 +8,11 @@
 </p>
 
 **Find the function, passage or note you need. Give your coding agent the evidence that fits.**
+
+[![Actual RAVEL searches in the local inspector](docs/assets/demo.gif)](docs/assets/demo.mp4)
+
+<sub>18-second silent montage of genuine local UI captures, not a real-time recording.
+The semantic capture includes a 5.2-second first model load. [Video, editable source and provenance](docs/demo/README.md).</sub>
 
 RAVEL is a compact local context engine for code repositories, Markdown, text and
 optional PDF/DOCX documents. Exact identifiers use SQLite BM25 without loading an
@@ -19,10 +24,6 @@ No accounts, paid APIs, telemetry or always-running daemon. One small core depen
 The optional model stays on your machine. **v0.1.0 is an experimental alpha**, with
 measured strengths, failures and limits documented below.
 
-[![Actual RAVEL searches in the local inspector](docs/assets/demo.gif)](docs/assets/demo.mp4)
-
-<sub>18-second silent montage of genuine local UI captures, not a real-time recording.
-The semantic capture includes a 5.2-second first model load. [Video, editable source and provenance](docs/demo/README.md).</sub>
 
 ## Search in a minute
 

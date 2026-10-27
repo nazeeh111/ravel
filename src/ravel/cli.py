@@ -11,6 +11,11 @@ from .engine import Index
 
 
 def main(argv=None):
+    # Source text and the MCP wire format are UTF-8 on every platform, including
+    # Windows pipes whose default encoding can otherwise be a legacy code page.
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(prog="ravel", description="The right context. Almost no overhead.")
     parser.add_argument("--version", action="version", version=f"ravel {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
