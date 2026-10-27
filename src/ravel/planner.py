@@ -10,6 +10,13 @@ FEATURES = ["identifier", "query_length", "lexical_coverage", "cache_coverage", 
 ACTIONS = ["lexical", "hybrid", "semantic"]
 
 
+def finite_number(value):
+    try:
+        return math.isfinite(value)
+    except OverflowError:
+        return False
+
+
 def features(query, coverage, cache_coverage, latency_ms, token_budget):
     identifier = bool(re.search(r"[_./]|[a-z][A-Z]", query)) or (len(query.split()) == 1)
     return [float(identifier), min(len(query.split()) / 20, 1), coverage, cache_coverage,
@@ -21,7 +28,7 @@ def choose(query, *, semantic, coverage, cache_coverage, latency_ms, token_budge
     if mode not in {"auto", *ACTIONS}:
         raise ValueError("mode must be auto, lexical, hybrid, or semantic")
     for name, value in (("latency_ms", latency_ms), ("memory_kib", memory_kib), ("token_budget", token_budget)):
-        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 1:
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not finite_number(value) or value < 1:
             raise ValueError(f"{name} must be finite and positive")
     x = features(query, coverage, cache_coverage, latency_ms, token_budget)
     reason = "explicit strategy"

@@ -37,11 +37,13 @@ def test_learned_policy_training_and_validation(tmp_path):
 
 def test_nonfinite_budgets_rejected():
     from ravel.server import validate_search
-    for value in [float('nan'), float('inf'), float('-inf')]:
+    for value in [float('nan'), float('inf'), float('-inf'), 10**400]:
         with pytest.raises(ValueError, match='finite'):
             call(latency_ms=value)
         with pytest.raises(ValueError, match='finite'):
             validate_search({'query': 'x', 'latency_ms': value})
+        with pytest.raises(ValueError, match='finite'):
+            call(memory_kib=value)
 
 
 def test_partial_cold_semantic_preserves_lexical_candidates():

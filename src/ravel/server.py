@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import json
-import math
 import sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from importlib.resources import files
@@ -10,6 +9,7 @@ from urllib.parse import urlparse
 
 from . import __version__
 from .engine import Index
+from .planner import finite_number
 
 SEARCH_PROPERTIES = {
     "query": {"type": "string", "minLength": 1, "maxLength": 8192},
@@ -44,7 +44,7 @@ def validate_search(args):
             raise ValueError(f"{key} must be numeric")
         if expected == "string" and not isinstance(value, str):
             raise ValueError(f"{key} must be a string")
-        if expected in {"number", "integer"} and not math.isfinite(value):
+        if expected in {"number", "integer"} and not finite_number(value):
             raise ValueError(f"{key} must be finite")
         if "minimum" in spec and value < spec["minimum"]:
             raise ValueError(f"{key} is below minimum")
