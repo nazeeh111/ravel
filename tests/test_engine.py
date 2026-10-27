@@ -101,7 +101,7 @@ def test_source_spans_exact_and_no_invented_relationships(project):
 
 
 def test_token_upper_bound_and_budget_truncation(project):
-    (project / 'unicode.md').write_text('\n'.join(['Context 世界 ' + str(i) for i in range(40)]))
+    (project / 'unicode.md').write_text('\n'.join(['Context 世界 ' + str(i) for i in range(40)]), encoding='utf-8')
     with Index(project) as idx:
         for budget in [1, 32, 500, 800, 2048, 10000]:
             result = idx.search('Context', token_budget=budget)
@@ -327,3 +327,19 @@ def test_pdf_cold_process_does_not_log_bytes(project):
                           capture_output=True, text=True, check=True)
     assert 'synth' not in proc.stderr
     assert proc.stderr == ''
+
+
+def test_utf8_cli_and_mcp_under_legacy_codepage(project):
+    (project / 'unicode.md').write_text('Context 世界 content\n', encoding='utf-8')
+    env = os.environ.copy()
+    env['PYTHONIOENCODING'] = 'cp1252'
+    proc = subprocess.run([sys.executable, '-m', 'ravel', 'search', 'Context', '--root', str(project), '--json'],
+                          env=env, capture_output=True, check=True)
+    assert '世界' in json.loads(proc.stdout.decode('utf-8'))['results'][0]['text']
+    message = {'jsonrpc': '2.0', 'id': 1, 'method': 'tools/call',
+               'params': {'name': 'ravel_search', 'arguments': {'query': '世界'}}}
+    proc = subprocess.run([sys.executable, '-m', 'ravel', 'mcp', '--root', str(project)], env=env,
+                          input=(json.dumps(message, ensure_ascii=False)+'\n').encode('utf-8'), capture_output=True, check=True)
+    result = json.loads(proc.stdout.decode('utf-8'))['result']
+    assert result['isError'] is False
+    assert '世界' in json.loads(result['content'][0]['text'])['results'][0]['text']

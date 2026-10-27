@@ -33,3 +33,9 @@ ONNX telemetry is disabled before import through `ORT_DISABLE_TELEMETRY=1`, with
 - Hybrid mode reranks lexical candidates. Cold semantic work may cover only part of the corpus; semantic coverage is returned explicitly. Benchmark results must preserve these limits.
 - PDF/DOCX locations refer to extracted text lines, not native page coordinates. Python call observations are syntax, not verified cross-file dependency resolution.
 - Scoped PDF logging changes the `pypdf` parent logger temporarily. The parser is not an isolation sandbox for hostile documents or arbitrary application logging customizations.
+
+## Supplemental UTF-8 portability review
+
+A focused delta review checked explicit UTF-8 fixture writes and standard-stream configuration in the CLI and direct MCP entry point. The new subprocess regression sets `PYTHONIOENCODING=cp1252`, retrieves Chinese source text through CLI JSON output, then sends a UTF-8 Chinese query through MCP and checks the returned source text. The focused test passed locally (`1 passed, 19 deselected`); lint passed for the changed CLI, server and test files. No issue requiring a change was found in this delta.
+
+This is legacy-code-page emulation on macOS. It does not establish that the patched revision has passed remote Windows CI. The earlier 23-test result above describes the preceding reviewed source; this supplemental check does not claim a new complete-suite or remote-CI result. Core retrieval behavior and benchmark measurements were outside this focused delta.

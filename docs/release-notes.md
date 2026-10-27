@@ -8,8 +8,8 @@ small model-free SQLite/BM25 core and optional pinned local BGE/ONNX embeddings.
 - CLI, reusable Python API, source-linked evidence and stdio MCP for Codex/Claude Code.
 - Content-hash incremental freshness, Python AST symbols, exact phrases and explicit source hashes/revisions.
 - Adaptive retrieval, int8 vectors, persisted storage quotas and measured frequency/cost-aware caching.
-- A local interactive inspector, original editable SVG branding and a genuine18-second screenshot demo.
-- 23 local correctness/privacy tests, independent review and official MCP-client interoperability.
+- A local interactive inspector, original editable SVG branding and a genuine 18-second screenshot demo.
+- 24 local correctness/privacy tests, independent review and official MCP-client interoperability.
 - Reproducible held-out heuristic/learned experiments, executed LEANN/QMD/Codanna/grepai/FAISS comparisons, and one full-repository ContextBench diagnostic.
 
 Install the attached wheel with `python -m pip install ./ravel_index-0.1.0-py3-none-any.whl`,
