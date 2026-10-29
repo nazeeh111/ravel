@@ -50,7 +50,7 @@ def main():
             text = f'{val:.3f}' if field == 'mrr' else f'{val:,.0f}'
             ax.text(val + ax.get_xlim()[1]*.02, j, text, va='center', fontsize=11)
         clean(ax)
-    fig.suptitle('RAVEL  /  measured choices, visible costs', x=.03, y=.97, ha='left', fontsize=19, fontweight='bold')
+    fig.suptitle('ravel  /  measured choices, visible costs', x=.03, y=.97, ha='left', fontsize=19, fontweight='bold')
     fig.text(.03, .89, '24 held-out queries · BGE-small · 3 repeats · tiny authored code/document corpus', color='#697570', fontsize=12)
     fig.text(.03, .045, 'Local observations under concurrent host load. Models preloaded for semantic rows. Full source verification included.', fontsize=11, color='#697570')
     fig.text(.03, .012, 'Source: benchmarks/results/summary.json · See docs/benchmarks.md for protocol, failures, cold start and limits.', fontsize=11, color='#697570')
@@ -62,8 +62,8 @@ def main():
     byname = {r['run']: r for r in external}
     keys = ['leann.json','faiss.json','ravel-lexical-cli.json','codanna-semantic.json',
             'ravel-matched-auto.json','grepai-semantic.json','qmd-bm25.json','qmd-vector.json']
-    names = ['LEANN compact','Exact FAISS + metadata','RAVEL lexical','Codanna semantic',
-             'RAVEL auto / matched MiniLM','grepai semantic','QMD BM25','QMD structured vector']
+    names = ['LEANN compact','Exact FAISS + metadata','ravel lexical','Codanna semantic',
+             'ravel auto / matched MiniLM','grepai semantic','QMD BM25','QMD structured vector']
     vals = [byname[k]['index_bytes'] / 1024 for k in keys]
     fig, ax = plt.subplots(figsize=(12.8, 5.8))
     ax.barh(range(8), vals, height=.56, color=['#21695c' if 'ravel' not in k else '#aa6040' for k in keys])

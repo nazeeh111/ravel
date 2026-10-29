@@ -5,6 +5,6 @@ report. Use a minimal fictional reproduction. If GitHub private vulnerability
 reporting is available, use the repository's Security tab; otherwise open a concise
 issue requesting a private contact route without exploit-sensitive details.
 
-RAVEL is experimental local software. Its exclusion filters are not a secret
+ravel is experimental local software. Its exclusion filters are not a secret
 scanner or a hostile-document sandbox. Treat indexed text as untrusted data and
 keep the loopback inspector local. See [privacy boundaries](docs/privacy.md).

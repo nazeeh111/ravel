@@ -167,7 +167,7 @@ def inspect(root, port=8765, **options):
                 return self.send({"error": str(exc)}, 400)
 
     httpd = HTTPServer(("127.0.0.1", port), Handler)
-    print(f"RAVEL inspector: http://127.0.0.1:{port} (Ctrl-C to stop)", flush=True)
+    print(f"ravel inspector: http://127.0.0.1:{port} (Ctrl-C to stop)", flush=True)
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

@@ -547,7 +547,7 @@ z
    </g>
   </g>
   <g id="text_48">
-   <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #202c2a" x="25.92" y="28.045031" transform="rotate(-0 25.92 28.045031)">RAVEL  /  measured choices, visible costs</text>
+   <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #202c2a" x="25.92" y="28.045031" transform="rotate(-0 25.92 28.045031)">ravel  /  measured choices, visible costs</text>
   </g>
   <g id="text_49">
    <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #697570" x="25.92" y="49.896" transform="rotate(-0 25.92 49.896)">24 held-out queries · BGE-small · 3 repeats · tiny authored code/document corpus</text>

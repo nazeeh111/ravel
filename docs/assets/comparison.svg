@@ -271,7 +271,7 @@ L 0 2
     <g id="ytick_3">
      <g id="line2d_31"/>
      <g id="text_7">
-      <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: #202c2a" x="263.764" y="167.992517" transform="rotate(-0 263.764 167.992517)">RAVEL lexical</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: #202c2a" x="263.764" y="167.992517" transform="rotate(-0 263.764 167.992517)">ravel lexical</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -283,7 +283,7 @@ L 0 2
     <g id="ytick_5">
      <g id="line2d_33"/>
      <g id="text_9">
-      <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: #202c2a" x="263.764" y="231.265244" transform="rotate(-0 263.764 231.265244)">RAVEL auto / matched MiniLM</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Arial', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: #202c2a" x="263.764" y="231.265244" transform="rotate(-0 263.764 231.265244)">ravel auto / matched MiniLM</text>
      </g>
     </g>
     <g id="ytick_6">

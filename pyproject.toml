@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ravel-index"
-version = "0.1.0"
+version = "0.1.1"
 description = "The right context. Almost no overhead. Local-first adaptive code and document retrieval."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -23,9 +23,9 @@ dev = ["pytest>=8,<10", "build>=1.2,<2", "ruff>=0.11,<1"]
 ravel = "ravel.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/nazeeh111/RavelIndex"
-Documentation = "https://github.com/nazeeh111/RavelIndex/tree/main/docs"
-Issues = "https://github.com/nazeeh111/RavelIndex/issues"
+Homepage = "https://github.com/nazeeh111/ravel"
+Documentation = "https://github.com/nazeeh111/ravel/tree/main/docs"
+Issues = "https://github.com/nazeeh111/ravel/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ravel"]
