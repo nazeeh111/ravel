@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/hero.svg" alt="RAVEL. The right context. Almost no overhead." width="640"></p>
+<p align="center"><img src="docs/assets/hero.svg" alt="ravel. The right context. Almost no overhead." width="640"></p>
 
 <p align="center">
   <a href="https://github.com/nazeeh111/ravel/actions/workflows/ci.yml"><img src="https://github.com/nazeeh111/ravel/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
@@ -9,19 +9,18 @@
 
 **Find the function, passage or note you need. Give your coding agent the evidence that fits.**
 
-[![Actual RAVEL searches in the local inspector](docs/assets/demo.gif)](docs/assets/demo.mp4)
+![The ravel workspace: real source results and a line-numbered reader](docs/assets/redesign/desktop.png)
 
-<sub>18-second silent montage of genuine local UI captures, not a real-time recording.
-The semantic capture includes a 5.2-second first model load. [Video, editable source and provenance](docs/demo/README.md).</sub>
+<sub>The local workspace, with real results. [Interface guide](docs/inspector.md) · [First-release demo and provenance](docs/demo/README.md).</sub>
 
-RAVEL is a compact local context engine for code repositories, Markdown, text and
+ravel is a compact local context engine for code repositories, Markdown, text and
 optional PDF/DOCX documents. Exact identifiers use SQLite BM25 without loading an
 embedding model. Harder questions can use local semantic retrieval. A cost-aware
 planner decides how much work to do, while a bounded int8 vector cache trades
 storage for recomputation.
 
 No accounts, paid APIs, telemetry or always-running daemon. One small core dependency.
-The optional model stays on your machine. **v0.1.0 is an experimental alpha**, with
+The optional model stays on your machine. **v0.1.1 is an experimental alpha**, with
 measured strengths, failures and limits documented below.
 
 
@@ -31,18 +30,18 @@ Python 3.10+ and Git are required for this installation route. [uv](https://docs
 is optional; ordinary pip works too.
 
 ```sh
-uv tool install 'ravel-index @ git+https://github.com/nazeeh111/ravel@v0.1.0'
+uv tool install 'git+https://github.com/nazeeh111/ravel@v0.1.1'
 
 ravel index /path/to/your/repository
 ravel search 'retry_with_backoff' --root /path/to/your/repository --tokens 2048
 ravel inspect --root /path/to/your/repository
 ```
 
-Prefer pip? Install the [release wheel](https://github.com/nazeeh111/ravel/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl)
+Prefer pip? Install the [release wheel](https://github.com/nazeeh111/ravel/releases/download/v0.1.1/ravel_index-0.1.1-py3-none-any.whl)
 in your virtual environment:
 
 ```sh
-python -m pip install https://github.com/nazeeh111/ravel/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl
+python -m pip install https://github.com/nazeeh111/ravel/releases/download/v0.1.1/ravel_index-0.1.1-py3-none-any.whl
 ```
 
 Try a public sample with no personal-data indexing:
@@ -58,7 +57,7 @@ ravel symbols ExpiringCache --root examples/sample
 Search returns source paths and exact line spans, a SHA-256 source hash, the current
 Git revision when available, and actual retrieval evidence. Editing, deleting,
 renaming or ignoring a file refreshes the next default search automatically.
-Source files are never changed by RAVEL.
+Source files are never changed by ravel.
 
 ## Add local semantic search
 
@@ -66,7 +65,7 @@ The core needs no model. Semantic support is an explicit extra and a separate,
 one-time public model download, approximately **67.2 MB** excluding the runtime.
 
 ```sh
-python -m pip install 'ravel-index[semantic] @ git+https://github.com/nazeeh111/ravel@v0.1.0'
+python -m pip install 'ravel-index[semantic] @ git+https://github.com/nazeeh111/ravel@v0.1.1'
 ravel index examples/sample --semantic --download-model --materialize
 ravel search 'How can I wait longer between temporary failures?' \
   --root examples/sample --tokens 2400
@@ -78,7 +77,7 @@ quota; omit it for lazy computation. `--cache-mb 1` sets a persistent vector pay
 quota. Models, metadata, source text, SQLite pages and process memory are separate
 costs. Inspect them with `ravel stats --root examples/sample`.
 
-## Put RAVEL in your coding agent
+## Put ravel in your coding agent
 
 ```sh
 codex mcp add ravel -- ravel mcp --root /absolute/path/to/repository
@@ -122,7 +121,7 @@ The [interactive inspector](docs/inspector.md) shows the actual selected strateg
 source evidence, cache hits, index storage and elapsed time. No external UI assets,
 JavaScript framework or hosted service is required.
 
-## Measurements, including where RAVEL loses
+## Measurements, including where ravel loses
 
 The repository includes raw runs and reproducible harnesses for:
 
@@ -130,7 +129,7 @@ The repository includes raw runs and reproducible harnesses for:
   training and held-out test queries, heuristic versus learned routing, cache
   quotas, fixed-strategy ablations, source freshness, CPU time and peak memory.
 * A shared 32-file/32-query fixture run with **LEANN, QMD, Codanna, grepai, exact
-  FAISS and RAVEL**, including a model-matched MiniLM cohort.
+  FAISS and ravel**, including a model-matched MiniLM cohort.
 * One full-repository **ContextBench** diagnostic, with the original issue as the
   query and gold paths used only for scoring. This exposed a cold-routing failure
   and motivated the lexical-preserving fallback.
@@ -139,7 +138,7 @@ The repository includes raw runs and reproducible harnesses for:
 
 These are small, local experiments, not leaderboard results. Several competitors
 score perfectly on the shared fixture. **LEANN and FAISS have smaller indexes than
-RAVEL there.** A smaller RAVEL cache can be slower and less accurate. The learned
+ravel there.** A smaller ravel cache can be slower and less accurate. The learned
 policy did not establish an advantage and is not the default. CLI startup, warm
 API calls, embedding models and tool capabilities are disclosed separately.
 Concurrent local workloads limit latency comparisons.
@@ -149,7 +148,7 @@ Concurrent local workloads limit latency comparisons.
 [Raw measurements](benchmarks) · [Current-source research and prior art](docs/research.md)
 
 Adaptive routing, BM25, AST chunking, incremental indexing and MCP already exist
-in other tools. RAVEL's experimental contribution is a minimal, inspectable joint
+in other tools. ravel's experimental contribution is a minimal, inspectable joint
 policy for retrieval depth, context allowance and frequency/cost-aware vector
 retention. It is not a claim to have invented those individual techniques.
 
@@ -161,7 +160,7 @@ from mixing source text, hashes and vectors. Removed, denied or newly ignored
 files lose old entries. This costs O(source bytes) per search. `--snapshot` is a
 consciously unchecked mode, labeled in every returned evidence object.
 
-RAVEL honors hierarchical Git ignores and `.ravelignore`, skips hidden directories,
+ravel honors hierarchical Git ignores and `.ravelignore`, skips hidden directories,
 symlinks, common secret names/patterns, unreadable files and files over 2 MiB.
 Exclusions are best effort; keep sensitive material outside the approved root or
 explicitly exclude it. The index contains readable source excerpts and is not

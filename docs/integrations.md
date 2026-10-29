@@ -1,6 +1,6 @@
 # Codex and Claude Code
 
-Install RAVEL first. Use an absolute executable path when a client does not inherit
+Install ravel first. Use an absolute executable path when a client does not inherit
 your shell PATH. Each server is restricted to the source root you name.
 
 ```sh
@@ -44,7 +44,7 @@ parameter. Search refreshes its index automatically; normal filesystem policy
 still applies. Context units conservatively count evidence bytes, not exact
 client tokens. Model protocol overhead is outside that allowance.
 
-RAVEL implements the standard newline-delimited JSON-RPC stdio transport and
+ravel implements the standard newline-delimited JSON-RPC stdio transport and
 initialize, notifications, ping, tools/list and tools/call. Automated tests check
 actual subprocess wire messages, schemas, successful retrieval and invalid tool
 arguments. Protocol versions 2024-11-05, 2025-03-26, 2025-06-18 and 2025-11-25 are
@@ -69,14 +69,14 @@ payload bytes; model and SQLite overhead are reported separately.
 ## Verification recorded for v0.1.0
 
 The real official MCP Python client completed initialize, tools/list and tools/call
-against the RAVEL subprocess, negotiated protocol `2025-11-25`, and retrieved
+against the ravel subprocess, negotiated protocol `2025-11-25`, and retrieved
 `retry.py` / `retry_with_backoff` within the requested evidence budget. Reproduce:
 
 ```sh
 uv run --with mcp --python .venv/bin/python scripts/verify_mcp.py
 ```
 
-The installed Codex CLI also parsed RAVEL's stdio command and fixed-root arguments
+The installed Codex CLI also parsed ravel's stdio command and fixed-root arguments
 using transient `-c` configuration overrides and reported the server enabled. This
 check did not modify the user's persistent configuration or run a downstream
 coding task. No Claude Code executable was installed on the verification host, so

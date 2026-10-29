@@ -1,6 +1,6 @@
-# How RAVEL retrieves context
+# How ravel retrieves context
 
-RAVEL is a Python library, CLI and local MCP server. SQLite owns persistence and
+ravel is a Python library, CLI and local MCP server. SQLite owns persistence and
 FTS5 owns BM25 ranking. There is one source root per database, normally
 `.ravel/index.sqlite3`. No external database service is needed.
 
@@ -21,7 +21,7 @@ generations. This is a database snapshot, not a filesystem lock.
 
 This scan is O(source bytes), and its time is included in `elapsed_ms`. That is a
 real cost on large roots. `--snapshot` explicitly skips it and marks evidence
-unchecked. RAVEL does not claim a file watcher, an atomic filesystem snapshot or
+unchecked. ravel does not claim a file watcher, an atomic filesystem snapshot or
 zero-cost freshness. Concurrent writes can occur after a scan. SHA-256 identifies
 the actual indexed bytes even when a Git revision also exists; a revision alone
 never proves an uncommitted file matches its commit.
@@ -47,7 +47,7 @@ invented text.
 BGE-small-en-v1.5 runs through FastEmbed/ONNX on CPU with two threads. Query
 instructions follow BGE's retrieval format. Each vector is symmetrically quantized
 to signed 8-bit components with a stored norm, then compared by cosine. No neural
-model is trained by RAVEL. Model download is a separate, explicit opt-in;
+model is trained by ravel. Model download is a separate, explicit opt-in;
 subsequent queries request local files only.
 
 ## Joint cost policy
@@ -86,7 +86,7 @@ explanations are additional output overhead; only the evidence array is budgeted
 Small budgets may fit no passage because provenance also costs space.
 
 `--memory-kib` bounds retained candidate work heuristically. It does not cap Python,
-SQLite, ONNX model or operating-system RSS. RAVEL currently uses linear compressed
+SQLite, ONNX model or operating-system RSS. ravel currently uses linear compressed
 vector scans, not HNSW/IVF. Very large collections should prefer an ANN engine until
 scale experiments justify adding one here. No universal storage or speed advantage
 is claimed.

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ravel-index"
-version = "0.1.0"
+version = "0.1.1"
 description = "The right context. Almost no overhead. Local-first adaptive code and document retrieval."
 readme = "README.md"
 requires-python = ">=3.10"

@@ -1,6 +1,8 @@
 # Experiments and honest limits
 
-RAVEL's adaptive policy is an engineering experiment. The measurements here support bounded local retrieval tradeoffs, not universal superiority or better patch-generation success. The [separate comparison](comparison.md) executes LEANN, QMD, Codanna, grepai and FAISS. Those runs use a different fixture and include explicitly disclosed model/interface differences.
+The retained runs measure the retrieval core from v0.1.0. The v0.1.1 workspace redesign does not change that core; benchmark source hashes remain recorded with the results.
+
+ravel's adaptive policy is an engineering experiment. The measurements here support bounded local retrieval tradeoffs, not universal superiority or better patch-generation success. The [separate comparison](comparison.md) executes LEANN, QMD, Codanna, grepai and FAISS. Those runs use a different fixture and include explicitly disclosed model/interface differences.
 
 ## Independent small suite
 
@@ -64,7 +66,7 @@ The experiment verifies addition, edit, rename and deletion through the normal r
 
 A bounded public-data check uses `SWE-Bench-Verified__python__maintenance__bugfix__90532e38`, the first xarray task in the downloaded ContextBench test file, selected before running retrieval. The source snapshot is [pydata/xarray at 19b088636eb7d3f65ab7a1046ac672e0689371d8](https://github.com/pydata/xarray/tree/19b088636eb7d3f65ab7a1046ac672e0689371d8). Only the original issue text is submitted to search. The patch and annotated context are excluded from the retrieval input. Gold paths are used only for scoring. The downloaded metadata SHA256, original task identifier, query hash, source spans, actual paths and configuration are retained in [raw diagnostic results](../benchmarks/results/contextbench-diagnostic.json).
 
-This is a **static file-retrieval diagnostic on one task**, not the official agent trajectory/line-level ContextBench protocol, a leaderboard score or an end-to-end coding-task evaluation. It indexes eligible text files with ordinary RAVEL exclusions, uses a 32,000-byte upper-bound evidence budget, returns up to 20 items and requests a soft 3-second latency target. It does not train the selector. It does not execute a repair or the upstream project's tests. The archive has no `.git`, so result-level revisions remain null; the report records the independently pinned archive revision without inventing an engine-observed commit.
+This is a **static file-retrieval diagnostic on one task**, not the official agent trajectory/line-level ContextBench protocol, a leaderboard score or an end-to-end coding-task evaluation. It indexes eligible text files with ordinary ravel exclusions, uses a 32,000-byte upper-bound evidence budget, returns up to 20 items and requests a soft 3-second latency target. It does not train the selector. It does not execute a repair or the upstream project's tests. The archive has no `.git`, so result-level revisions remain null; the report records the independently pinned archive revision without inventing an engine-observed commit.
 
 <!-- OFFICIAL_START -->
 | Strategy | First RR / file recall | Next two RR / file recall | First latency | Next two latencies |
@@ -78,7 +80,7 @@ The final snapshot indexes **204 eligible files and 5,555 chunks**, with an appr
 
 The diagnostic exposed a real weakness missed by the small suite: cold partial semantic sampling could discard useful lexical results and miss every gold file. Auto mode now preserves lexical evidence when cache coverage is low and the corpus exceeds the affordable depth. [Before-fix evidence](../benchmarks/results/contextbench-before-fix.json) is retained. Remaining failures and partial coverage are reported, rather than relabeling them as success. Hybrid mode reranks lexical candidates, so it cannot recover candidates absent from its lexical shortlist. A cold sampled semantic search is not a complete corpus nearest-neighbor search. Materializing the complete vector cache can improve coverage but consumes storage and indexing compute.
 
-Agent Retrieval Bench and CORE-Bench were inspected for relevance definition, candidate sets, frozen revisions, token packing and licensing. Full runs were not completed. No score is claimed for them. ARB's official all-files candidate universe and canonical token packing differ from RAVEL's source-exclusion and byte-budget protocol. CORE-Bench's data are CC-BY-NC-SA-4.0 and are not bundled as MIT data. See [research](research.md) and [attribution](attribution.md).
+Agent Retrieval Bench and CORE-Bench were inspected for relevance definition, candidate sets, frozen revisions, token packing and licensing. Full runs were not completed. No score is claimed for them. ARB's official all-files candidate universe and canonical token packing differ from ravel's source-exclusion and byte-budget protocol. CORE-Bench's data are CC-BY-NC-SA-4.0 and are not bundled as MIT data. See [research](research.md) and [attribution](attribution.md).
 
 ## Reproduce
 

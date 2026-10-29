@@ -5,17 +5,17 @@ and the approved root only. Optional model acquisition is the sole built-in
 network operation and requires `--download-model`. Index text never goes to a
 hosted model. There is no hosted-model integration in v0.1.0.
 
-Before loading optional embeddings, RAVEL disables Hugging Face telemetry and
+Before loading optional embeddings, ravel disables Hugging Face telemetry and
 implicit authentication, sets an index-local Hugging Face home and enables
 `ORT_DISABLE_TELEMETRY=1` before importing ONNX Runtime. It also calls
 `onnxruntime.disable_telemetry_events()` before session creation. Downloads pass
 `token=False` explicitly and pin the public model snapshot, avoiding implicit
 credential lookups even if an API host imported Hugging Face earlier. Queries use
-`local_files_only=True`. Dependency build behavior can vary; RAVEL does not claim
-a packet-captured audit of every third-party binary. An API host which imported a runtime before RAVEL controls that earlier import;
-RAVEL cannot retroactively change another library's prior behavior. A fresh CLI
+`local_files_only=True`. Dependency build behavior can vary; ravel does not claim
+a packet-captured audit of every third-party binary. An API host which imported a runtime before ravel controls that earlier import;
+ravel cannot retroactively change another library's prior behavior. A fresh CLI
 process was checked with the ONNX opt-out active and emitted no device-ID warning.
-RAVEL itself collects no telemetry. For a hard network boundary, run ordinary
+ravel itself collects no telemetry. For a hard network boundary, run ordinary
 queries under your operating system's network restrictions after model download.
 
 Discovery honors hierarchical `.gitignore` and `.ravelignore` rules, including
@@ -38,7 +38,7 @@ internal-notes.md
 The local index contains readable source excerpts and lexical postings. Treat it
 as private data, not encrypted storage. New index directories request mode 0700
 and database files mode 0600. Existing directory permissions are not silently
-changed. Python/SQLite operations use the invoking user's access. RAVEL cannot
+changed. Python/SQLite operations use the invoking user's access. ravel cannot
 revoke old backups or filesystem snapshots. SQLite secure deletion is enabled;
 `--compact` can reclaim free pages after removal.
 
@@ -50,5 +50,5 @@ protocol messages to stdout without query logs. A coding agent still needs its
 normal consent and source-instruction safeguards.
 
 To remove an index, stop processes using it and delete only the selected root's
-`.ravel` directory. That also removes models downloaded for that index. RAVEL
+`.ravel` directory. That also removes models downloaded for that index. ravel
 never deletes source files.

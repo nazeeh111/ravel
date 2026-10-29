@@ -1,24 +1,57 @@
-# Index inspector
+# The ravel workspace
 
-The inspector is a small local interface for querying a real RAVEL index. It shows source passages, line ranges, the selected retrieval strategy, elapsed query time, the conservative token upper bound and storage use. It contains no analytics, external scripts, fonts, or remote assets.
+Run `ravel inspect --root /path/to/repository` and open the loopback URL printed in
+the terminal. The interface is served by the local ravel process. No CDN, web
+framework, remote font, analytics or external UI asset is required.
 
-Start it with `ravel inspect` from your indexed directory. Open the loopback URL printed in the terminal. The CLI and server remain the authority for supported arguments; use `ravel inspect --help` for configuration.
+## Search, then read
 
-Use **Adaptive** to let the planner select a retrieval route. Choose **Lexical**, **Hybrid** or **Semantic** for a direct comparison on the same query. Set a context budget and result limit before searching. Budget units are serialized UTF-8 bytes, a conservative upper bound for byte-fallback tokenizers, rather than an exact tokenizer count. The bound covers evidence and its provenance; protocol overhead is separate. An unavailable embedding backend is reported by the server rather than replaced by simulated results. Copy context to move the displayed source passages into an editor.
+A single command bar accepts questions, filenames, quoted phrases and exact
+symbols. Choose Adaptive, Lexical, Hybrid or Semantic. Adaptive selects from the
+retrieval strategies available in the actual index. Semantic strategies require
+an explicitly enabled local model; unavailable models produce a visible error.
 
-The query list lives only in the current tab's JavaScript memory. Reloading clears it. Clipboard access may require browser permission. Paths and source text are rendered as text, including any markup inside indexed files. No results or performance values are hardcoded.
+Context settings live beside the strategy controls. They set the evidence budget
+and maximum passages. Budget units are serialized UTF-8 bytes, a conservative
+token upper bound, rather than exact tokenizer counts. Source references count
+toward that budget; response metadata is separate.
 
-## Interface contract
+Results form a selectable source list beside a line-numbered reader with local
+syntax coloring. Source text is inserted as text nodes, never executable markup.
+The Provenance tab shows each passage's actual SHA-256, revision, original or
+extracted-text line basis, lexical rank, cosine score and observed calls.
+Observed calls are syntax in the displayed source, not resolved dependencies.
 
-The single HTML file is `src/ravel/inspector.html`. It expects same-origin JSON endpoints:
+Copy one passage or the delivered context selection. Clipboard failure is shown
+explicitly, and source text remains selectable. Search failures retain previous
+results with a visible error. Empty searches offer concrete recovery suggestions.
+Pending searches show progress without invented time estimates.
 
-- `GET /api/stats`: `files`, `chunks`, `index_bytes`, `cache_bytes`, `embedding_backend`, `root`, `revision`.
-- `POST /api/search`: request `{query, token_budget, mode, limit}`; response `{results, plan, metrics}`.
-- Result fields: `path`, `start_line`, `end_line`, `text`, `symbol`, `score`, `evidence`, `revision`.
-- Plan fields: `strategy`, `reason`. Metrics: `elapsed_ms`, `tokens_used`, optional `freshness`.
+## Find your way around
 
-The server should bind to loopback and reject cross-origin requests. The browser sends only same-origin requests. The inspector is read-only with respect to source files, but searches may refresh an index or populate an embedding cache according to the engine's configured policy.
+- **⌘ / Ctrl K** focuses search.
+- **Enter** submits a query.
+- **Up / Down** on a source result selects the previous or next passage.
+- **Escape** closes context settings or the keyboard-shortcut dialog.
+- **Index overview** shows real source counts, vector quota/use, SQLite and model
+  storage, source directory and revision. Refresh reads the current index status.
+- **Appearance** switches light/dark for this tab.
 
-## Visual identity
+Recent queries and appearance preferences exist in this tab's memory only.
+Reloading clears them. On narrow screens, the source list scrolls horizontally
+above the reader and navigation remains available at the top. Reduced motion is
+respected. All controls support visible keyboard focus.
 
-RAVEL's mark uses four interwoven teal paths that converge on a single copper point. Warm paper and dark ink keep long source passages comfortable to read. The identity is original SVG, editable without a design application. The inspector uses system fonts and exposes source evidence before supporting metrics. It adapts to narrow screens and honors reduced-motion preferences.
+## API and implementation
+
+The UI is one packaged HTML file, `src/ravel/inspector.html`, using the existing
+same-origin endpoints:
+
+- `GET /api/stats`: actual source counts, index/vector/model bytes, configured
+  quota, embedding backend, root and revision.
+- `POST /api/search`: `{query, token_budget, mode, limit}`; returns source results,
+  planner decisions, freshness and retrieval metrics.
+
+The server binds loopback and validates Host and Origin. The UI introduces no
+filesystem or source-editing endpoint. Search can reconcile the index and fill a
+local vector cache; source files are not modified.
