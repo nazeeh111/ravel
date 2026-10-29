@@ -1,8 +1,8 @@
 <p align="center"><img src="docs/assets/hero.svg" alt="RAVEL. The right context. Almost no overhead." width="640"></p>
 
 <p align="center">
-  <a href="https://github.com/nazeeh111/RavelIndex/actions/workflows/ci.yml"><img src="https://github.com/nazeeh111/RavelIndex/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/nazeeh111/RavelIndex/releases"><img src="https://img.shields.io/github/v/release/nazeeh111/RavelIndex?color=21695c" alt="Release"></a>
+  <a href="https://github.com/nazeeh111/ravel/actions/workflows/ci.yml"><img src="https://github.com/nazeeh111/ravel/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/nazeeh111/ravel/releases"><img src="https://img.shields.io/github/v/release/nazeeh111/ravel?color=21695c" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-21695c" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-21695c" alt="Python 3.10 or newer">
 </p>
@@ -31,25 +31,25 @@ Python 3.10+ and Git are required for this installation route. [uv](https://docs
 is optional; ordinary pip works too.
 
 ```sh
-uv tool install 'ravel-index @ git+https://github.com/nazeeh111/RavelIndex@v0.1.0'
+uv tool install 'ravel-index @ git+https://github.com/nazeeh111/ravel@v0.1.0'
 
 ravel index /path/to/your/repository
 ravel search 'retry_with_backoff' --root /path/to/your/repository --tokens 2048
 ravel inspect --root /path/to/your/repository
 ```
 
-Prefer pip? Install the [release wheel](https://github.com/nazeeh111/RavelIndex/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl)
+Prefer pip? Install the [release wheel](https://github.com/nazeeh111/ravel/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl)
 in your virtual environment:
 
 ```sh
-python -m pip install https://github.com/nazeeh111/RavelIndex/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl
+python -m pip install https://github.com/nazeeh111/ravel/releases/download/v0.1.0/ravel_index-0.1.0-py3-none-any.whl
 ```
 
 Try a public sample with no personal-data indexing:
 
 ```sh
-git clone https://github.com/nazeeh111/RavelIndex.git
-cd RavelIndex
+git clone https://github.com/nazeeh111/ravel.git
+cd ravel
 ravel index examples/sample
 ravel search 'retry_with_backoff' --root examples/sample --tokens 2048
 ravel symbols ExpiringCache --root examples/sample
@@ -66,7 +66,7 @@ The core needs no model. Semantic support is an explicit extra and a separate,
 one-time public model download, approximately **67.2 MB** excluding the runtime.
 
 ```sh
-python -m pip install 'ravel-index[semantic] @ git+https://github.com/nazeeh111/RavelIndex@v0.1.0'
+python -m pip install 'ravel-index[semantic] @ git+https://github.com/nazeeh111/ravel@v0.1.0'
 ravel index examples/sample --semantic --download-model --materialize
 ravel search 'How can I wait longer between temporary failures?' \
   --root examples/sample --tokens 2400
